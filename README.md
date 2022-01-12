@@ -1,6 +1,6 @@
 # Disease-Prediction-and-Deployment
 
-<img srchttps://www2.lehigh.edu/sites/www2/files/media/chuah17conference.jpg width="1100" height="300" />
+<img src=https://www2.lehigh.edu/sites/www2/files/media/chuah17conference.jpg width="1100" height="300" />
 <p> This is one of major project of my undergraduate degree program.</p>
 <p>Here,we are devoloping a disease predicting web app which using the concept of machine learning abd deep learning makes predictions about various diseases like Malaria, Pneumonia, Diabetes,brain tumour,leaf disease, etc etc.</p>
 
