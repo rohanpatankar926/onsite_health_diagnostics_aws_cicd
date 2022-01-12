@@ -28,6 +28,6 @@
   
   <p> After finishing the all model,ui and setup.The whole project will be deployed on Heroku Cloud or Netlify cloud.
   <br>
- <p> We are expecting to complete the whole project within one month.<p>
+ <p> We are expecting to complete the whole project within one month.Till then watch our progress.<p>
 
 <p>Thankyou:relaxed::relaxed:</p>
