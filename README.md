@@ -14,8 +14,8 @@
 <li><p><b>OpenCV</b></p></li>
 <li><p><b>Pandas</b></p></li>
 <li><p><b>Numpy</b></p></li>
-<li><p><b>HTML</b></p></li>
-<li><p><b>CSS</b></p></li>
+<li><p><b>HTML5</b></p></li>
+<li><p><b>CSS3</b></p></li>
 <li><p><b>Machine Learning algorithms</b></p></li>
 <li><p><b>Deep Learning algorithms</b></p></li>
 </ul>
@@ -31,3 +31,4 @@
   </br>
  <p>Expecting to complete the whole project within one month<p>
 
+<p>Thankyou</p>
