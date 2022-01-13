@@ -9,7 +9,7 @@
 
 <h3> Tools will be used for project development: </h3>
 <ul>
-<li><p><b>Python ( 3.7 version)</b></p></li>
+<li><p><b>Python ( 3.7+ version)</b></p></li>
 <li><p><b>Flask</b></p></li>
 <li><p><b>OpenCV</b></p></li>
  <li><p><b>Keras</b></p></li>
@@ -32,3 +32,11 @@
  <p> We are expecting to complete the whole project within one month.Till then watch our progress.<p>
 
 <p>Thankyou:relaxed::relaxed:</p>
+### Licence
+``` 
+MIT
+```
+### Developers
+```Rohan Patnakar - Machine Learning```
+```Apsara Budhathoki - Web design```
+```Nishant Banjade - Machine Learning```
