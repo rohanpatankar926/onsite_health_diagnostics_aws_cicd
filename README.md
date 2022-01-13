@@ -23,15 +23,11 @@
 
 <h3>How this project help in real world</h3>
 <p>Like we are devoloping this project which has all type of disease covered.And also we are giving all the information how the disease caused,its prevention,symptoms and so on..</p>
-
-
-
   
   <p> After finishing the all model,ui and setup.The whole project will be deployed on Heroku Cloud or Netlify cloud.
   <br>
  <p> We are expecting to complete the whole project within one month.Till then watch our progress.<p>
 
-<p>Thankyou:relaxed::relaxed:</p>
 
 ## Licence
 ``` 
@@ -47,3 +43,5 @@ Apsara Budhathoki - Web design
 ```
 Nishant Banjade - Machine Learning
 ```
+  
+<p>Thankyou:relaxed::relaxed:</p>
