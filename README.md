@@ -21,9 +21,19 @@
 <li><p><b>Deep Learning algorithms</b></p></li>
 </ul>
 
-<h3>How this project help in real world</h3>
+<h2>Datasets</h2>
+<ul>
+ <li> <p><b>pneumonia :</b>https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia</p></li>
+ <li><p><b>brain tumour :</b>https://www.kaggle.com/ahmedhamada0/brain-tumor-detection</p></li>
+ <li><p><b>Diabetes :</b>diabetes.csv</p></li>
+ <li><p><b>heart disease :</b>heart disease</p></li>
+ <li><p><b>Breast Cancer :</b>data.csv</p></li>
+</ul
+
+<h2> How this project helps in real world?? </h2>
+
 <p>Like we are devoloping this project which has all type of disease covered.And also we are giving all the information how the disease caused,its prevention,symptoms and so on..</p>
-  
+
   <p> After finishing the all model,ui and setup.The whole project will be deployed on Heroku Cloud or Netlify cloud.
   <br>
  <p> We are expecting to complete the whole project within one month.Till then watch our progress.<p>
