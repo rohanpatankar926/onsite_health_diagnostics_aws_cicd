@@ -35,7 +35,7 @@ MIT
 ```
 ### Developers
 ```
-Rohan Patnakar - Machine Learning
+Rohan Patankar - Machine Learning
 ```
 ```
 Apsara Budhathoki - Web design
