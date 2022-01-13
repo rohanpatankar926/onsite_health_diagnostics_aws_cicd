@@ -32,11 +32,18 @@
  <p> We are expecting to complete the whole project within one month.Till then watch our progress.<p>
 
 <p>Thankyou:relaxed::relaxed:</p>
-### Licence
+
+## Licence
 ``` 
 MIT
 ```
 ### Developers
-```Rohan Patnakar - Machine Learning```
-```Apsara Budhathoki - Web design```
-```Nishant Banjade - Machine Learning```
+```
+Rohan Patnakar - Machine Learning
+```
+```
+Apsara Budhathoki - Web design
+```
+```
+Nishant Banjade - Machine Learning
+```
