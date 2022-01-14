@@ -38,14 +38,8 @@ We are developing this project which involves the prediction of many diseases ba
 MIT
 ```
 ### Developers
-```
-Rohan Patankar - Machine Learning
-```
-```
-Apsara Budhathoki - Web design
-```
-```
-Nishant Banjade - Machine Learning
-```
+```Rohan Patankar - Machine Learning```
+```Apsara Budhathoki - Web Development```
+```Nishant Banjade - Machine Learning```
   
 <p>Thankyou:relaxed::relaxed:</p>
