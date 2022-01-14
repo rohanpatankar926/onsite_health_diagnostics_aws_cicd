@@ -21,15 +21,13 @@
 <li><p><b>Deep Learning algorithms</b></p></li>
 </ul>
 
-<h2>Datasets</h2>
-<ul>
+## Datasets
+ - Pneumonia : [Dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
+ - Brain tumour : [Dataset](https://www.kaggle.com/ahmedhamada0/brain-tumor-detection)
+ - Diabetes : diabetes.csv
+ - Heart disease : heart.csv
+ - Breast Cancer : data.csv
 
- <li> Pneumonia :</b> [Dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)</li>
- <li> Brain tumour :</b> [Dataset](https://www.kaggle.com/ahmedhamada0/brain-tumor-detection)</p></li>
- <li><p><b>Diabetes :</b> diabetes.csv</p></li>
- <li><p><b>Heart disease :</b> heart.csv</p></li>
- <li><p><b>Breast Cancer :</b> data.csv</p></li>
-</ul
 
 <h2> How this project helps in real world?? </h2>
 
