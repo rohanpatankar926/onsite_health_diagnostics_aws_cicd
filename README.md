@@ -9,15 +9,15 @@ We are developing a disease predicting web application using the concept of Mach
 
 
 ## Tools Required: 
-- ```Python ```
-- ```Numpy```
-- ```Pandas```
-- ```Matplotlib```
-- ```Seaborn```
-- ```Scikit-learn```
-- ```Tensorlow & Keras```
-- ```Html, Css, JavaScript```
-- ```openCV```
+- Python
+- Numpy
+- Pandas
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Tensorlow & Keras
+- Html, Css, JavaScript
+- openCV
 
 ## Datasets
  - Pneumonia :              [Dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
@@ -32,11 +32,11 @@ We are developing a disease predicting web application using the concept of Mach
 We are developing this project which involves the prediction of many diseases based on the user input which consists of facts or ```Radiography images```.  And also we will be providing all the required information about the disease ```caused```, ```symptoms``` and its ```prevention``` in our web site.. After developing the model, it’s ```UI``` and every document, the whole project will be deployed on ```Heroku Cloud```  or ```Netlify cloud```. We are expecting to complete the whole project within one month.
 
 ### Developers
-```Rohan Patankar - Machine Learning```
+Rohan Patankar - ```Machine Learning```
 
-```Apsara Budhathoki - Web Development```
+Apsara Budhathoki - ```Web Development```
 
-```Nishant Banjade - Machine Learning```
+Nishant Banjade - ```Machine Learning```
 
 ## Licence
 ``` 
