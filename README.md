@@ -16,8 +16,8 @@ We are developing a disease predicting web application using the concept of Mach
 - ```Seaborn```
 - ```Scikit-learn```
 - ```Tensorlow & Keras```
-- ```Html, Css, JavaScript
-- ```openCV
+- ```Html, Css, JavaScript```
+- ```openCV```
 
 ## Datasets
  - Pneumonia :              [Dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
