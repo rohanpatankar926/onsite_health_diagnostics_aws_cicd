@@ -1,13 +1,14 @@
 # Disease-Prediction-and-Deployment
 
 <img src=https://www2.lehigh.edu/sites/www2/files/media/chuah17conference.jpg width="1100" height="300" />
-<p> This is one of the major project of our undergraduate degree program.</p>
-<p>Here,we are devoloping a disease predicting web app which using the concept of machine learning abd deep learning makes predictions about various diseases like Malaria, Pneumonia, Diabetes,brain tumour,leaf disease, etc etc.</p>
+
+We are developing a disease predicting web application using the concept of Machine Learning and Deep Learning to make predictions about various diseases like ```Breast Cancer Malaria, Pneumonia, Diabetes, Brain tumour, Leaf disease``` etc.
 
 
 
 
-<h3> Tools will be used for project development: </h3>
+
+## Tools Required: 
 <ul>
 <li><p><b>Python ( 3.7+ version)</b></p></li>
 <li><p><b>Flask</b></p></li>
@@ -17,8 +18,6 @@
 <li><p><b>Numpy</b></p></li>
 <li><p><b>HTML5</b></p></li>
 <li><p><b>CSS3</b></p></li>
-<li><p><b>Machine Learning algorithms</b></p></li>
-<li><p><b>Deep Learning algorithms</b></p></li>
 </ul>
 
 ## Datasets
@@ -29,13 +28,9 @@
  - Breast Cancer : data.csv
 
 
-<h2> How this project helps in real world?? </h2>
+## Impact in the Real World
 
-<p>Like we are devoloping this project which has all type of disease covered.And also we are giving all the information how the disease caused,its prevention,symptoms and so on..</p>
-
-  <p> After finishing the all model,ui and setup.The whole project will be deployed on Heroku Cloud or Netlify cloud.
-  <br>
- <p> We are expecting to complete the whole project within one month.Till then watch our progress.<p>
+We are developing this project which involves the prediction of many diseases based on the user input which consists of facts or ```Radiography images```.  And also we will be providing all the required information about the disease ```caused```, ```symptoms``` and its ```prevention``` in our web site.. After developing the model, it’s ```UI``` and every document, the whole project will be deployed on ```Heroku Cloud```  or ```Netlify cloud```. We are expecting to complete the whole project within one month.
 
 
 ## Licence
