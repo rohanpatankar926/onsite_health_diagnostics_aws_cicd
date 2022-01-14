@@ -24,11 +24,11 @@
 <h2>Datasets</h2>
 <ul>
 
- <li> <p><b>Pneumonia :</b>[Dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)</p></li>
- <li><p><b>Brain tumour :</b>[Dataset](https://www.kaggle.com/ahmedhamada0/brain-tumor-detection)</p></li>
- <li><p><b>Diabetes :</b>diabetes.csv</p></li>
- <li><p><b>Heart disease :</b>heart disease</p></li>
- <li><p><b>Breast Cancer :</b>data.csv</p></li>
+ <li> Pneumonia :</b> [Dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)</li>
+ <li> Brain tumour :</b> [Dataset](https://www.kaggle.com/ahmedhamada0/brain-tumor-detection)</p></li>
+ <li><p><b>Diabetes :</b> diabetes.csv</p></li>
+ <li><p><b>Heart disease :</b> heart.csv</p></li>
+ <li><p><b>Breast Cancer :</b> data.csv</p></li>
 </ul
 
 <h2> How this project helps in real world?? </h2>
