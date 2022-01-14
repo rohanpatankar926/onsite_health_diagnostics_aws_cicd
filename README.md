@@ -9,23 +9,22 @@ We are developing a disease predicting web application using the concept of Mach
 
 
 ## Tools Required: 
-<ul>
-<li><p><b>Python ( 3.7+ version)</b></p></li>
-<li><p><b>Flask</b></p></li>
-<li><p><b>OpenCV</b></p></li>
- <li><p><b>Keras</b></p></li>
-<li><p><b>Pandas</b></p></li>
-<li><p><b>Numpy</b></p></li>
-<li><p><b>HTML5</b></p></li>
-<li><p><b>CSS3</b></p></li>
-</ul>
+- ```Python ```
+- ```Numpy```
+- ```Pandas```
+- ```Matplotlib```
+- ```Seaborn```
+- ```Scikit-learn```
+- ```Tensorlow & Keras```
+- ```Html, Css, JavaScript
+- ```openCV
 
 ## Datasets
- - Pneumonia : [Dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
- - Brain tumour : [Dataset](https://www.kaggle.com/ahmedhamada0/brain-tumor-detection)
- - Diabetes : diabetes.csv
- - Heart disease : heart.csv
- - Breast Cancer : data.csv
+ - Pneumonia :              [Dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
+ - Brain tumour :           [Dataset](https://www.kaggle.com/ahmedhamada0/brain-tumor-detection)
+ - Diabetes :               diabetes.csv
+ - Heart disease :          heart.csv
+ - Breast Cancer :          data.csv
 
 
 ## Impact in the Real World
