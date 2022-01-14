@@ -39,7 +39,9 @@ MIT
 ```
 ### Developers
 ```Rohan Patankar - Machine Learning```
+
 ```Apsara Budhathoki - Web Development```
+
 ```Nishant Banjade - Machine Learning```
   
 <p>Thankyou:relaxed::relaxed:</p>
