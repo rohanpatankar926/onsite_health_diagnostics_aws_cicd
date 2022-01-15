@@ -4,7 +4,7 @@
 
 
 
-We are developing a disease predicting web application using the concept of Machine Learning and Deep Learning to make predictions about various diseases like ```Breast Cancer Malaria, Pneumonia, Diabetes, Brain tumour, Leaf disease``` etc.
+We are developing a disease predicting web application using the concept of Machine Learning and Deep Learning to make predictions about various diseases like ```Breast Cancer Malaria```, ```Pneumonia, Diabetes```, ```Brain tumour```, ```Leaf disease``` etc.
 ## Table Of Contents
 
 -   [Tools](#Tools)
@@ -15,14 +15,14 @@ We are developing a disease predicting web application using the concept of Mach
 -   [Licence](#Licence)
 
 ## Tools : 
-- ```Python, Numpy, Pandas, Matplotlib, Seaborn, Scikit-learn, Tensorlow & Keras, Html, Css, JavaScript``` and ```openCV```
+- ```Python```, ```Numpy```, ```Pandas```, ```Matplotlib```, ```Seaborn```, ```Scikit-learn```, ```Tensorlow & Keras```, ```Html```, ```Css```, ```JavaScript``` and ```openCV```
 
 ## Datasets
- - Pneumonia :              [Dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
- - Brain tumour :           [Dataset](https://www.kaggle.com/ahmedhamada0/brain-tumor-detection)
- - Diabetes :               diabetes.csv
- - Heart disease :          heart.csv
- - Breast Cancer :          data.csv
+ - Pneumonia            :              [Dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
+ - Brain tumour         :              [Dataset](https://www.kaggle.com/ahmedhamada0/brain-tumor-detection)
+ - Diabetes             :              [Dataset](https://github.com/Nix-code/Disease-Prediction-and-Deployment/blob/main/src/model/Diabetes/diabetes.csv)
+ - Heart disease        :              [Dataset](https://github.com/Nix-code/Disease-Prediction-and-Deployment/blob/main/src/model/Heart%20disease/heart.csv)
+ - Breast Cancer        :              [Dataset](https://github.com/Nix-code/Disease-Prediction-and-Deployment/blob/main/src/model/Breast%20Cancer/data.csv)
 
 ## Directory
 ```
