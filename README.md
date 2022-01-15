@@ -51,7 +51,18 @@ We are developing a disease predicting web application using the concept of Mach
 <p> Impact in the real world</p>
 
 We are developing this project which involves the prediction of many diseases based on the user input which consists of facts or ```Radiography images```.  And also we will be providing all the required information about the disease ```caused```, ```symptoms``` and its ```prevention``` in our web site.. After developing the model, it’s ```UI``` and every document, the whole project will be deployed on ```Heroku Cloud```  or ```Netlify cloud```. We are expecting to complete the whole project within one month.
+## Clone
 
+```
+git clone git@github.com:Nix-code/Disease-Prediction-and-Deployment.git
+```
+- To run on your local machine, make sure you have installed every requirements.
+```
+$ export FLASK_APP=app
+$ flask run
+ * Running on http://127.0.0.1:5000/
+ ```
+ 
 ## Developers
 Rohan Patankar - ```Machine Learning```
 
