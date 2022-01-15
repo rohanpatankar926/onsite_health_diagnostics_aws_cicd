@@ -11,6 +11,7 @@ We are developing a disease predicting web application using the concept of Mach
 -   [Datasets](#Datasets)
 -   [Directory](#Directory)
 -   [Impact](#Impact)
+-   [Clone](#Clone)
 -   [Developers](#Developers)
 -   [Licence](#Licence)
 
