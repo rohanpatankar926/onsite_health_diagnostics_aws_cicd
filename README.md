@@ -31,7 +31,7 @@ We are developing a disease predicting web application using the concept of Mach
 ├── src
 |    |── assets
 |    |      |── css
-|    |      |── style.css
+|    |      |    |── style.css
 |    |      |   
 |    |── model 
 |    |      |── Breast Cancer
