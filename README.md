@@ -26,7 +26,29 @@ We are developing a disease predicting web application using the concept of Mach
  - Heart disease :          heart.csv
  - Breast Cancer :          data.csv
 
-
+## Directory Tree 
+```
+├── docs
+|    |──About.txt
+├── src
+|    |── assets
+|    |      |── css
+|    |      |── style.css
+|    |      |   
+|    |── model 
+|    |      |── Breast Cancer
+|    |      |── Diabetes
+|    |      |── Heart Disease
+|    |      |── Pneumonia-detection
+|    |      |── brain_tumor_classification
+|    |── templates
+│    |      ├── index.html
+│    |
+|
+├── app.py
+├── README.md
+└── requirements.txt
+```
 ## Impact in the Real World
 
 We are developing this project which involves the prediction of many diseases based on the user input which consists of facts or ```Radiography images```.  And also we will be providing all the required information about the disease ```caused```, ```symptoms``` and its ```prevention``` in our web site.. After developing the model, it’s ```UI``` and every document, the whole project will be deployed on ```Heroku Cloud```  or ```Netlify cloud```. We are expecting to complete the whole project within one month.
