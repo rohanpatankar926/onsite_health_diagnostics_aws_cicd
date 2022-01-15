@@ -15,15 +15,7 @@ We are developing a disease predicting web application using the concept of Mach
 -   [Licence](#Licence)
 
 ## Tools : 
-- Python
-- Numpy
-- Pandas
-- Matplotlib
-- Seaborn
-- Scikit-learn
-- Tensorlow & Keras
-- Html, Css, JavaScript
-- openCV
+- Python, Numpy, Pandas, Matplotlib, Seaborn, Scikit-learn, Tensorlow & Keras, Html, Css, JavaScript, openCV
 
 ## Datasets
  - Pneumonia :              [Dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
