@@ -2,13 +2,19 @@
 
 <img src=https://www2.lehigh.edu/sites/www2/files/media/chuah17conference.jpg width="1100" height="300" />
 
+
+
 We are developing a disease predicting web application using the concept of Machine Learning and Deep Learning to make predictions about various diseases like ```Breast Cancer Malaria, Pneumonia, Diabetes, Brain tumour, Leaf disease``` etc.
+## Table Of Contents
 
+-   [Tools](#Tools)
+-   [Datasets](#Datasets)
+-   [Directory](#Directory)
+-   [Impact](#Impact)
+-   [Developers](#Developers)
+-   [Licence](#Licence)
 
-
-
-
-## Tools Required: 
+## Tools : 
 - Python
 - Numpy
 - Pandas
@@ -26,10 +32,10 @@ We are developing a disease predicting web application using the concept of Mach
  - Heart disease :          heart.csv
  - Breast Cancer :          data.csv
 
-## Directory Tree 
+## Directory
 ```
 ├── docs
-|    |──About.txt
+|    |──about.txt
 ├── src
 |    |── assets
 |    |      |── css
@@ -49,11 +55,12 @@ We are developing a disease predicting web application using the concept of Mach
 ├── README.md
 └── requirements.txt
 ```
-## Impact in the Real World
+## Impact
+<p> Impact in the real world</p>
 
 We are developing this project which involves the prediction of many diseases based on the user input which consists of facts or ```Radiography images```.  And also we will be providing all the required information about the disease ```caused```, ```symptoms``` and its ```prevention``` in our web site.. After developing the model, it’s ```UI``` and every document, the whole project will be deployed on ```Heroku Cloud```  or ```Netlify cloud```. We are expecting to complete the whole project within one month.
 
-### Developers
+## Developers
 Rohan Patankar - ```Machine Learning```
 
 Apsara Budhathoki - ```Web Development```
