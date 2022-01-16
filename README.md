@@ -1,4 +1,4 @@
-# Disease-Prediction-and-Deployment
+# Onsite Health Diagnostic (OHD)
 
 <img src=https://www2.lehigh.edu/sites/www2/files/media/chuah17conference.jpg width="1100" height="300" />
 
