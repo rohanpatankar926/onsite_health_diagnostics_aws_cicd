@@ -51,7 +51,7 @@ We are developing a disease predicting web application using the concept of Mach
 ## Impact
 <p> Impact in the real world</p>
 
-We are developing this project which involves the prediction of many diseases based on the user input which consists of facts or ```Radiography images```.  And also we will be providing all the required information about the disease ```caused```, ```symptoms``` and its ```prevention``` in our web site.. After developing the model, it’s ```UI``` and every document, the whole project will be deployed on ```Heroku Cloud```  or ```Netlify cloud```. We are expecting to complete the whole project within one month.
+We are developing this project which involves the prediction of many diseases based on the user input which consists of facts or ```Radiography images```.  And also we will be providing all the required information about the disease, it's```cause```, ```symptoms``` and its ```prevention``` in the web site. After developing the models, ```UI``` and every documents, the whole project will be deployed on ```Heroku```  or ```Netlify cloud```. We are expecting to complete the whole project within one month.
 ## Clone
 
 ```
@@ -72,7 +72,5 @@ Apsara Budhathoki - ```Web Development```
 Nishant Banjade - ```Machine Learning```
 
 ## Licence
-``` 
-MIT
-```
+``` <b>MIT<b>```
 <p>Thank you:relaxed::relaxed:</p>
