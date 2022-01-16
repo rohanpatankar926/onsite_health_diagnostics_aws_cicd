@@ -24,6 +24,8 @@ We are developing a disease predicting web application using the concept of Mach
  - Diabetes             :              [Dataset](https://github.com/Nix-code/Disease-Prediction-and-Deployment/blob/main/src/model/Diabetes/diabetes.csv)
  - Heart disease        :              [Dataset](https://github.com/Nix-code/Disease-Prediction-and-Deployment/blob/main/src/model/Heart%20disease/heart.csv)
  - Breast Cancer        :              [Dataset](https://github.com/Nix-code/Disease-Prediction-and-Deployment/blob/main/src/model/Breast%20Cancer/data.csv)
+ - Malaria-Detection    :              - [Dataset](https://lhncbc.nlm.nih.gov/LHC-publications/pubs/MalariaDatasets.html#:~:text=Abstract%3A,the%20Malaria%20Screener%20research%20activity.&text=The%20dataset%20contains%20a%20total,of%20parasitized%20and%20uninfected%20cells.)
+
 
 ## Directory
 ```
@@ -40,6 +42,9 @@ We are developing a disease predicting web application using the concept of Mach
 |    |      |── Heart Disease
 |    |      |── Pneumonia-detection
 |    |      |── brain_tumor_classification
+|    |      |── Malaria-Detection
+|    |      |── thyroid prediction
+|    |
 |    |── templates
 │    |      ├── index.html
 │    |
