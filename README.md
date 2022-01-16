@@ -72,5 +72,5 @@ Apsara Budhathoki - ```Web Development```
 Nishant Banjade - ```Machine Learning```
 
 ## Licence
-``` <b>MIT<b>```
+```MIT```
 <p>Thank you:relaxed::relaxed:</p>
