@@ -46,8 +46,8 @@ We are developing a disease predicting web application using the concept of Mach
 |    |      |── thyroid prediction
 |    |
 |    |── templates
-│    |      ├── index.html
-│    |
+│         ├── index.html
+│    
 |
 ├── app.py
 ├── README.md
