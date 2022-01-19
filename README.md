@@ -1,4 +1,4 @@
-# Disease-Prediction-and-Deployment
+# Onsite Health Diagnostic (OHD)
 
 <img src=https://www2.lehigh.edu/sites/www2/files/media/chuah17conference.jpg width="1100" height="300" />
 
@@ -24,6 +24,8 @@ We are developing a disease predicting web application using the concept of Mach
  - Diabetes             :              [Dataset](https://github.com/Nix-code/Disease-Prediction-and-Deployment/blob/main/src/model/Diabetes/diabetes.csv)
  - Heart disease        :              [Dataset](https://github.com/Nix-code/Disease-Prediction-and-Deployment/blob/main/src/model/Heart%20disease/heart.csv)
  - Breast Cancer        :              [Dataset](https://github.com/Nix-code/Disease-Prediction-and-Deployment/blob/main/src/model/Breast%20Cancer/data.csv)
+ - Malaria-Detection    :              - [Dataset](https://lhncbc.nlm.nih.gov/LHC-publications/pubs/MalariaDatasets.html#:~:text=Abstract%3A,the%20Malaria%20Screener%20research%20activity.&text=The%20dataset%20contains%20a%20total,of%20parasitized%20and%20uninfected%20cells.)
+
 
 ## Directory
 ```
@@ -40,9 +42,12 @@ We are developing a disease predicting web application using the concept of Mach
 |    |      |── Heart Disease
 |    |      |── Pneumonia-detection
 |    |      |── brain_tumor_classification
+|    |      |── Malaria-Detection
+|    |      |── thyroid prediction
+|    |
 |    |── templates
-│    |      ├── index.html
-│    |
+│         ├── index.html
+│    
 |
 ├── app.py
 ├── README.md
@@ -51,7 +56,7 @@ We are developing a disease predicting web application using the concept of Mach
 ## Impact
 <p> Impact in the real world</p>
 
-We are developing this project which involves the prediction of many diseases based on the user input which consists of facts or ```Radiography images```.  And also we will be providing all the required information about the disease ```caused```, ```symptoms``` and its ```prevention``` in our web site.. After developing the model, it’s ```UI``` and every document, the whole project will be deployed on ```Heroku Cloud```  or ```Netlify cloud```. We are expecting to complete the whole project within one month.
+We are developing this project which involves the prediction of many diseases based on the user input which consists of facts or ```Radiography images```.  And also we will be providing all the required information about the disease, it's```cause```, ```symptoms``` and its ```prevention``` in the web site. After developing the models, ```UI``` and every documents, the whole project will be deployed on ```Heroku```  or ```Netlify cloud```. We are expecting to complete the whole project within one month.
 ## Clone
 
 ```
@@ -72,7 +77,5 @@ Apsara Budhathoki - ```Web Development```
 Nishant Banjade - ```Machine Learning```
 
 ## Licence
-``` 
-MIT
-```
+```MIT```
 <p>Thank you:relaxed::relaxed:</p>
