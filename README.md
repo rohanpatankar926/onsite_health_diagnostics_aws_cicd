@@ -36,6 +36,11 @@ We are developing a disease predicting web application using the concept of Mach
 |    |      |── css
 |    |      |    |── style.css
 |    |      |   
+|    |      |── static
+|    |      |    |── img
+|    |      |    
+|    |      |── js  
+|
 |    |── model 
 |    |      |── Breast Cancer
 |    |      |── Diabetes
@@ -47,7 +52,8 @@ We are developing a disease predicting web application using the concept of Mach
 |    |
 |    |── templates
 │         ├── index.html
-│    
+│         |── heart.html
+|         |── disease.html
 |
 ├── app.py
 ├── README.md
