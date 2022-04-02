@@ -4,7 +4,7 @@
 
 
 
-We are developing a disease predicting web application using the concept of Machine Learning and Deep Learning to make predictions about various diseases like ```Breast Cancer Malaria```, ```Pneumonia, Diabetes```, ```Brain tumour```, ```Leaf disease``` etc.
+Developing a disease predicting web application using the concept of Machine Learning and Deep Learning to make the predictive model for various diseases such as ```Breast Cancer```,```Malaria```, ```Pneumonia```, ```Diabetes```, ```Brain tumour```, ```plant disease``` etc.
 ## Table Of Contents
 
 -   [Tools](#Tools)
