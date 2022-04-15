@@ -76,11 +76,11 @@ $ flask run
  ```
  
 ## Developers
-Rohan Patankar - ```Machine Learning```
+Rohan Patankar - ```Machine Learning & Deployment```
 
-Apsara Budhathoki - ```Web Development```
+Apsara Budhathoki - ```Web Design & Development```
 
-Nishant Banjade - ```Machine Learning```
+Nishant Banjade - ```Machine Learning & Deployment```
 
 ## Licence
 ```MIT```
