@@ -8,13 +8,12 @@
   <title>Thyroid</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="{{url_for('static', filename='img/disease2page.png')}}">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css"
-    href="/home/apsara/Desktop/Onsite-Health-Diagnostic-OHD/src/assets/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css"
-    href="/home/apsara/Desktop/Onsite-Health-Diagnostic-OHD/src/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='/css/font-awesome.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='/css/bootstrap.min.css')}}">
 
-  <link rel="stylesheet" href="/home/apsara/Desktop/Onsite-Health-Diagnostic-OHD/src/assets/css/style.css">
+  <link rel="stylesheet" href="{{url_for('static', filename='/css/style.css')}}">
 
 </head>
 
@@ -30,324 +29,326 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#"><img
-                  src="/home/apsara/Desktop/Onsite-Health-Diagnostic-OHD/src/assets/static/img/logo.png"
+              <a class="navbar-brand" href="#"><img src="{{url_for('static', filename='img/logo.png')}}"
                   class="img-responsive" style="width:400px;height: 50px; margin-top: -18px;"></a>
             </div>
             <div class="collapse navbar-collapse navbar-right" id="myNavbar">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="disease.html">Home</a></li>
+                <li class="active"><a href="{{url_for('index')}}">Home</a></li>
+                <li class=""><a href="{{url_for('disease')}}">Disease</a></li>
                 <li class=""><a href="#about">About</a></li>
 
               </ul>
             </div>
           </div>
         </div>
-          </nav>
+      </nav>
 
 
 
       <div class="container">
         <div class="row">
           <div class="top-section-info">
-           
-            <div class="top-section-text text-center" style="margin-top:-70px";>
+
+            <div class="top-section-text text-center" style="margin-top:-70px" ;>
 
 
-          <form class="well form-horizontal" action=" " method="post" id="contact_form">
-            <fieldset>
+              <form class="well form-horizontal" action=" " method="post" id="contact_form">
+                <fieldset>
 
-              <!-- Form Name -->
-              <!-- <legend>Enter values!</legend> -->
+                  <!-- Form Name -->
+                  <!-- <legend>Enter values!</legend> -->
 
 
-              <!-- Text input-->
+                  <!-- Text input-->
 
-              <div class="form-group">
+                  <div class="form-group">
+                    <p style="color:rgb(65, 26, 8)">THYROID DISEASE PREDICTION</p>
+                    <p style="color:rgb(4, 61, 54)">Please, Fill up the form to get the prediction</p>
 
-                <label class="col-md-4 control-label"> </label>
-                <div class="col-md-4 inputGroupContainer">
-                  <div class="input-group">
-                    <span class="input-group-addon"></span>
-                    <input name="DAge" placeholder="Age  " class="form-control" type="text">
+                    <label class="col-md-4 control-label"> </label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"></span>
+                        <input name="DAge" placeholder="Age  " class="form-control" type="text">
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
-              <!-- Text input-->
-              <div class="form-group">
-                <label class="col-md-4 control-label"></label>
-                <div class="col-md-4 inputGroupContainer">
-                  <div class="input-group">
-                    <span class="input-group-addon"></span>
-                    <input name="Sex" placeholder="Sex" class="form-control" type="text">
+                  <!-- Text input-->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"></span>
+                        <input name="Sex" placeholder="Sex" class="form-control" type="text">
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
-              <!-- Text input-->
+                  <!-- Text input-->
 
-              <div class="form-group">
-                <label class="col-md-4 control-label"></label>
-                <div class="col-md-4 inputGroupContainer">
-                  <div class="input-group">
-                    <span class="input-group-addon"></span>
-                    <input name="On thyroxine " placeholder="On thyroxine " class="form-control" type="text">
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"></span>
+                        <input name="On thyroxine " placeholder="On thyroxine " class="form-control" type="text">
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
-              <!-- Text input-->
-              <div class="form-group">
-                <label class="col-md-4 control-label"></label>
-                <div class="col-md-4 inputGroupContainer">
-                  <div class="input-group">
-                    <span class="input-group-addon"></span>
-                    <input name="Query on thyroxine" placeholder="Query on thyroxine" class="form-control" type="text">
+                  <!-- Text input-->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"></span>
+                        <input name="Query on thyroxine" placeholder="Query on thyroxine" class="form-control"
+                          type="text">
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
-              <!-- Text area -->
+                  <!-- Text area -->
 
-              <div class="form-group">
-                <label class="col-md-4 control-label"> </label>
-                <div class="col-md-4 inputGroupContainer">
-                  <div class="input-group">
-                    <span class="input-group-addon"></span>
-                    <input name="On antithyroid medication " placeholder="On antithyroid medication " class="form-control" type="text">
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"> </label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"></span>
+                        <input name="On antithyroid medication " placeholder="On antithyroid medication "
+                          class="form-control" type="text">
 
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
 
-              <div class="form-group">
-                <label class="col-md-4 control-label"></label>
-                <div class="col-md-4 inputGroupContainer">
-                  <div class="input-group">
-                    <span class="input-group-addon"></span>
-                    <input name="Sick" placeholder="Sick" class="form-control"
-                      type="text">
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"></span>
+                        <input name="Sick" placeholder="Sick" class="form-control" type="text">
 
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <!-- Text input-->
+                  <!-- Text input-->
 
-              <div class="form-group">
-                <label class="col-md-4 control-label"></label>
-                <div class="col-md-4 inputGroupContainer">
-                  <div class="input-group">
-                    <span class="input-group-addon"></span>
-                    <input name="Pregnant" placeholder="Pregnant" class="form-control" type="text">
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"></span>
+                        <input name="Pregnant" placeholder="Pregnant" class="form-control" type="text">
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
 
-              <!-- Text input-->
+                  <!-- Text input-->
 
-              <div class="form-group">
-                <label class="col-md-4 control-label"></label>
-                <div class="col-md-4 inputGroupContainer">
-                  <div class="input-group">
-                    <span class="input-group-addon"></span>
-                    <input name="Thyroid  surgery" placeholder="Thyroid  surgery" class="form-control" type="text">
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"></span>
+                        <input name="Thyroid  surgery" placeholder="Thyroid  surgery" class="form-control" type="text">
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <!-- Text input-->
-              <div class="form-group">
-                <label class="col-md-4 control-label"></label>
-                <div class="col-md-4 inputGroupContainer">
-                  <div class="input-group">
-                    <span class="input-group-addon"></span>
-                    <input name="I131 treatment" placeholder="I131 treatment" class="form-control" type="text">
+                  <!-- Text input-->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"></span>
+                        <input name="I131 treatment" placeholder="I131 treatment" class="form-control" type="text">
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
 
 
-              <!-- Text area -->
+                  <!-- Text area -->
 
-              <div class="form-group">
-                <label class="col-md-4 control-label"></label>
-                <div class="col-md-4 inputGroupContainer">
-                  <div class="input-group">
-                    <span class="input-group-addon"></span>
-                    <input name="Query hypothyroid" placeholder="uQery hypothyroid" class="form-control" type="text">
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"></span>
+                        <input name="Treatment Query" placeholder="Treatment Query" class="form-control" type="text">
 
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
 
-              <div class="form-group">
-                <label class="col-md-4 control-label"></label>
-                <div class="col-md-4 inputGroupContainer">
-                  <div class="input-group">
-                    <span class="input-group-addon"></span>
-                    <input name="Query hypethyroid" placeholder="Query hypethyroid" class="form-control"
-                      type="text">
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"></span>
+                        <input name="Query hypethyroid" placeholder="Query hypethyroid" class="form-control"
+                          type="text">
 
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
-              <div class="form-group">
-                <label class="col-md-4 control-label"></label>
-                <div class="col-md-4 inputGroupContainer">
-                  <div class="input-group">
-                    <span class="input-group-addon"></span>
-                    <input name="Lithium" placeholder="Lithium" class="form-control" type="text">
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"></span>
+                        <input name="Lithium" placeholder="Lithium" class="form-control" type="text">
 
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
-              <div class="form-group">
-                <label class="col-md-4 control-label"></label>
-                <div class="col-md-4 inputGroupContainer">
-                  <div class="input-group">
-                    <span class="input-group-addon"></span>
-                    <input name="Goitre" placeholder="Goitre" class="form-control" type="text">
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"></span>
+                        <input name="Goitre" placeholder="Goitre" class="form-control" type="text">
 
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
 
 
 
 
-              <div class="form-group">
-                <label class="col-md-4 control-label"></label>
-                <div class="col-md-4 inputGroupContainer">
-                  <div class="input-group">
-                    <span class="input-group-addon"></span>
-                    <input name="Tumor" placeholder="Tumor" class="form-control" type="text">
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"></span>
+                        <input name="Tumor" placeholder="Tumor" class="form-control" type="text">
 
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
 
-              <div class="form-group">
-                <label class="col-md-4 control-label"></label>
-                <div class="col-md-4 inputGroupContainer">
-                  <div class="input-group">
-                    <span class="input-group-addon"></span>
-                    <input name="Hypopituitary" placeholder="Hypopituitary" class="form-control" type="text">
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"></span>
+                        <input name="Hypopituitary" placeholder="Hypopituitary" class="form-control" type="text">
 
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
 
-              <div class="form-group">
-                <label class="col-md-4 control-label"></label>
-                <div class="col-md-4 inputGroupContainer">
-                  <div class="input-group">
-                    <span class="input-group-addon"></span>
-                    <input name="Psych" placeholder="Psych" class="form-control"
-                      type="text">
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"></span>
+                        <input name="Psych" placeholder="Psych" class="form-control" type="text">
 
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
-              <div class="form-group">
-                <label class="col-md-4 control-label"></label>
-                <div class="col-md-4 inputGroupContainer">
-                  <div class="input-group">
-                    <span class="input-group-addon"></span>
-                    <input name="TSH measured" placeholder="TSH measured" class="form-control" type="text">
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"></span>
+                        <input name="TSH measured" placeholder="TSH measured" class="form-control" type="text">
 
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
-              <div class="form-group">
-                <label class="col-md-4 control-label"></label>
-                <div class="col-md-4 inputGroupContainer">
-                  <div class="input-group">
-                    <span class="input-group-addon"></span>
-                    <input name="T3 measured " placeholder="T3 measured " class="form-control" type="text">
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"></span>
+                        <input name="T3 measured " placeholder="T3 measured " class="form-control" type="text">
 
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
 
-              <div class="form-group">
-                <label class="col-md-4 control-label"></label>
-                <div class="col-md-4 inputGroupContainer">
-                  <div class="input-group">
-                    <span class="input-group-addon"></span>
-                    <input name="TT4 measured  placeholder="TT4 measured  class="form-control" type="text">
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"></span>
+                        <input name="TT4 measured" placeholder="TT4 measured" class="form-control" type="text">
 
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
 
 
-              <div class="form-group">
-                <label class="col-md-4 control-label"> </label>
-                <div class="col-md-4 inputGroupContainer">
-                  <div class="input-group">
-                    <span class="input-group-addon"></span>
-                    <input name="T4U measured  " placeholder="T4U measured  " class="form-control"type="text">
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"> </label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"></span>
+                        <input name="T4U measured  " placeholder="T4U measured  " class="form-control" type="text">
 
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
-              <div class="form-group">
-                <label class="col-md-4 control-label"> </label>
-                <div class="col-md-4 inputGroupContainer">
-                  <div class="input-group">
-                    <span class="input-group-addon"></span>
-                    <input name="FTI measured  " placeholder="FTI measured  " class="form-control"type="text">
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"> </label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"></span>
+                        <input name="FTI measured  " placeholder="FTI measured  " class="form-control" type="text">
 
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
-              <div class="form-group">
-                <label class="col-md-4 control-label"> </label>
-                <div class="col-md-4 inputGroupContainer">
-                  <div class="input-group">
-                    <span class="input-group-addon"></span>
-                    <input name="TBG measured  " placeholder="TBG measured  " class="form-control"type="text">
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"> </label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"></span>
+                        <input name="TBG measured  " placeholder="TBG measured  " class="form-control" type="text">
 
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
-             
-              <!-- Button -->
-              <div class="form-group">
-                <label class="col-md-4 control-label"></label>
-                <div class="col-md-4">
-                  <button type="submit" class="btn btn-warning">Send <span
-                      class="glyphicon glyphicon-send"></span></button>
-                </div>
-              </div>
 
-            </fieldset>
-          </form>
+                  <!-- Button -->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4">
+                      <button type="submit" class="btn btn-warning">Predict<span
+                          class="glyphicon glyphicon-send"></span></button>
+                    </div>
+                  </div>
+
+                </fieldset>
+              </form>
+            </div>
+          </div><!-- /.container -->
         </div>
-      </div><!-- /.container -->
+      </div>
     </div>
     </div>
     </div>
     </div>
     </div>
-  </div>
-</div>
   </section>
 
   <!--about-->
@@ -356,7 +357,7 @@
       <div class="row">
         <div class="col-md-3 col-sm-4 col-xs-12">
           <div class="section-title">
-            <h2 class="head-title lg-line">Breast<br>Cancer</h2>
+            <h2 class="head-title lg-line">THYROID<br>DISEASE</h2>
             <hr class="botm-line">
             <p class="sec-para">Please, read these instructions before using our machine learning
               models. If you want to try it for learning purposes ,you can proceed to our
@@ -370,14 +371,14 @@
               <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
               <div class="more-features-box-text-description">
                 <h3>Symptoms</h3>
-                <ul >
-                <li>1. Newly inverted nipple</li>
-                <li>2. Lump in the breast</li>
-                <li>3. Dimpling of skin</li>
-                <li>4. Change the breast size</li>
-                <li>5. Fluid comig from the nipple</li>
-                <li>6. Red scaly patch of skin on the breast</li>
-                <a href="Breastcancer.html" style="color: #0cb8b6; padding-top:10px;">Know more..</a>
+                <ul>
+                  <li>1. Newly inverted nipple</li>
+                  <li>2. Lump in the breast</li>
+                  <li>3. Dimpling of skin</li>
+                  <li>4. Change the breast size</li>
+                  <li>5. Fluid comig from the nipple</li>
+                  <li>6. Red scaly patch of skin on the breast</li>
+
 
                 </ul>
 
@@ -395,7 +396,7 @@
                   <li>4. Maintain your blood sugar level</li>
                   <li>5. Keeps your body physically active</li>
                 </ul>
-                <a href="" style="color: #0cb8b6; padding-top:10px;">Know more..</a>
+
 
               </div>
             </div>
@@ -411,7 +412,7 @@
                   <li>5. Radition therapy</li>
                 </ul>
 
-                <a href="" style="color: #0cb8b6; padding-top:10px;">Know more..</a>
+
               </div>
 
             </div>
@@ -423,10 +424,9 @@
   </section>
 
 
-  <script src="/home/apsara/Desktop/Onsite-Health-Diagnostic-OHD/src/assets/js/jquery.min.js"></script>
-  <script src="/home/apsara/Desktop/Onsite-Health-Diagnostic-OHD/src/assets/js/jquery.easing.min.js"></script>
-  <script src="/home/apsara/Desktop/Onsite-Health-Diagnostic-OHD/src/assets/js/bootstrap.min.js"></script>
-  <script src="/home/apsara/Desktop/Onsite-Health-Diagnostic-OHD/src/assets/js/custom.js"></script>
+  <script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+  <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+  <script src="{{url_for('static',filename='js/custom.js')}}"></script>
 
   <script src="contactform/contactform.js"></script>
 </body>

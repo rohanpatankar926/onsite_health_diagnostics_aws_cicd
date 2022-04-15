@@ -7,16 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Heartdiseases</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="{{url_for('static', filename='img/disease2page.png')}}">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='/css/font-awesome.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='/css/bootstrap.min.css')}}">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="{{url_for('static', filename='img/disease2page.png')}}">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='/css/font-awesome.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='/css/bootstrap.min.css')}}">
 
-    <link rel="stylesheet" href="{{url_for('static', filename='/css/style.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='/css/style.css')}}">
 
 </head>
-    
+
 <body>
   <section id="top-section" class="top-section">
     <div class="bg-color">
@@ -30,23 +30,23 @@
                 <span class="icon-bar"></span>
               </button>
               <a class="navbar-brand" href="#"><img src="{{url_for('static', filename='img/logo.png')}}"
-                class="img-responsive" style="width:400px;height: 50px; margin-top: -18px;"></a>
+                  class="img-responsive" style="width:400px;height: 50px; margin-top: -18px;"></a>
             </div>
             <div class="collapse navbar-collapse navbar-right" id="myNavbar">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="disease.html">Home</a></li>
+                <li class="active"><a href="{{url_for('index')}}">Home</a></li>
 
-                <li class=""><a href="#prection">prection</a></li>
                 <li class=""><a href="#about">About</a></li>
+                <li class=""><a href="#prediction-section">Prediction</a></li>
 
               </ul>
             </div>
-           
+
           </div>
-          
+
         </div>
       </nav>
-      
+
     </div>
   </section>
 
@@ -71,16 +71,16 @@
               <div class="more-features-box-text-description">
                 <h3>Symptoms</h3>
                 <ul>
-                  <li>Fever</li>
-                  <li>hortness of breath</li>
-                  <li>Weakness or fatigue </li>
-                  <li>Dry or persistent cough</li>
-                  <li>Skin rashes or unusual spots</li>
-                  <li>Changes in your heart rhythm</li>
-                  <li>Swelling in your legs or abdomen</li>
+                  <li>1. Fever</li>
+                  <li>2. hortness of breath</li>
+                  <li>3. Weakness or fatigue </li>
+                  <li>4. Dry or persistent cough</li>
+                  <li>5. Skin rashes or unusual spots</li>
+                  <li>6. Changes in your heart rhythm</li>
+                  <li>7. Swelling in your legs or abdomen</li>
                 </ul>
 
-                <a href="Heartdisease.html" style="color: #0cb8b6; padding-top:10px;">Know more..</a>
+
               </div>
             </div>
             <div class="more-features-box-text">
@@ -88,13 +88,13 @@
               <div class="more-features-box-text-description">
                 <h3>Prevention</h3>
                 <ul>
-                  <li>Eat a healthy diet</li>
-                  <li> Keep a healthy weight</li>
-                  <li> avoid smoking and drinking</li>
-                  <li>Maintain your blood sugar level</li>
-                  <li>Keeps your body physically active</li>
+                  <li>1. Eat a healthy diet</li>
+                  <li>2. Keep a healthy weight</li>
+                  <li>3. avoid smoking and drinking</li>
+                  <li>3. Maintain your blood sugar level</li>
+                  <li>4. Keeps your body physically active</li>
                 </ul>
-                <a href="" style="color: #0cb8b6; padding-top:10px;">Know more..</a>
+
 
               </div>
             </div>
@@ -105,23 +105,21 @@
                 <p>Diabetes mellitus, commonly known as just diabetes, is a group of metabolic disorders characterized
                   by a high blood sugar level over a prolonged period of time.
                 </p>
-                <a href="" style="color: #0cb8b6; padding-top:10px;">Know more..</a>
+
               </div>
 
             </div>
 
-            </div>
-            </div>
           </div>
         </div>
+      </div>
+    </div>
   </section>
 
 
-  <script src="/home/apsara/Desktop/Onsite-Health-Diagnostic-OHD/src/assets/js/jquery.min.js"></script>
-  <script src="/home/apsara/Desktop/Onsite-Health-Diagnostic-OHD/src/assets/js/jquery.easing.min.js"></script>
-  <script src="/home/apsara/Desktop/Onsite-Health-Diagnostic-OHD/src/assets/js/bootstrap.min.js"></script>
-  <script src="/home/apsara/Desktop/Onsite-Health-Diagnostic-OHD/src/assets/js/custom.js"></script>
-  <script src="contactform/contactform.js"></script>
+  <script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+  <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+  <script src="{{url_for('static',filename='js/custom.js')}}"></script>
 </body>
 
 </html>

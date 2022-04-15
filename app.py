@@ -19,9 +19,28 @@ def index():
 def disease():
     return render_template('disease.html')
 
+
+
+
 @app.route('/breastcancer',methods=['GET','POST'])
 def breastcancer():
     return render_template('breastcancer.html')
+
+@app.route('/diabetes',methods=['GET','POST'])
+def diabetes():
+    return render_template('diabetes.html')
+
+@app.route('/pneumonia',methods=['GET','POST'])
+def pneumonia():
+    return render_template('pneumonia.html')
+
+@app.route('/thyroid',methods=['GET','POST'])
+def thyroid():
+    return render_template('thyroid.html')
+
+@app.route('/heart',methods=['GET','POST'])
+def heart():
+    return render_template('heart.html')
 
 if __name__=="__main__":
     app.run(port=5000,debug=True)
