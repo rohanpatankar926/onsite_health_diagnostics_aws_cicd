@@ -15,6 +15,9 @@ app = Flask(__name__,static_folder=static_dir,template_folder=template_dir)
 def index():
     return render_template('index.html')
 
+@app.route('/disease',methods=['GET','POST'])
+def disease():
+    return render_template('disease.html')
 
 if __name__=="__main__":
     app.run(port=5000,debug=True)
