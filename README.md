@@ -1,6 +1,6 @@
 # Onsite Health Diagnostic (OHD)
 
-<img src=https://www2.lehigh.edu/sites/www2/files/media/chuah17conference.jpg width="1100" height="300" />
+<img src="https://github.com/Nix-code/Onsite-Health-Diagnostic-OHD/blob/main/src/static/img/disease2page.png" width="1100" height="500" />
 
 
 
@@ -62,7 +62,7 @@ Developing a disease predicting web application using the concept of Machine Lea
 ## Impact
 <p> Impact in the real world</p>
 
-We are developing this project which involves the prediction of many diseases based on the user input which consists of facts or ```Radiography images```.  And also we will be providing all the required information about the disease, it's```cause```, ```symptoms``` and its ```prevention``` in the web site. After developing the models, ```UI``` and every documents, the whole project will be deployed on ```Heroku```  or ```Netlify cloud```. We are expecting to complete the whole project within one month.
+We are developing this project which involves the prediction of many diseases based on the user input which consists of facts or ```Radiography images```.  And also we will be providing all the required information about the disease, it's```cause```, ```symptoms``` and its ```prevention``` in the web site. After developing the models, ```UI``` and every documents, the whole project will be deployed on ```Heroku```
 ## Clone
 
 ```
@@ -76,12 +76,11 @@ $ flask run
  ```
  
 ## Developers
-Rohan Patankar - ```Machine Learning```
+Rohan Patankar - ```Machine Learning & Deployment```
 
-Apsara Budhathoki - ```Web Development```
+Apsara Budhathoki - ```Web Design & Development```
 
-Nishant Banjade - ```Machine Learning```
+Nishant Banjade - ```Machine Learning & Deployment```
 
 ## Licence
 ```MIT```
-<p>Thank you:relaxed::relaxed:</p>
