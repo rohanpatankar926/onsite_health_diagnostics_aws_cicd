@@ -19,5 +19,9 @@ def index():
 def disease():
     return render_template('disease.html')
 
+@app.route('/breastcancer',methods=['GET','POST'])
+def breastcancer():
+    return render_template('breastcancer.html')
+
 if __name__=="__main__":
     app.run(port=5000,debug=True)
