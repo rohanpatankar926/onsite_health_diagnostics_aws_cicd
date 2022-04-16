@@ -46,6 +46,4 @@ filename = 'diabetes.sav'
 
 joblib.dump(rf, filename)
 
-load_model = joblib.load(filename)
-rp = load_model.predict(X_test)
 
