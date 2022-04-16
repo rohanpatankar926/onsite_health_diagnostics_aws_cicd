@@ -32,13 +32,11 @@ Developing a disease predicting web application using the concept of Machine Lea
 ├── docs
 |    |──about.txt
 ├── src
-|    |── assets
+|    |── static
 |    |      |── css
-|    |      |    |── style.css
-|    |      |   
-|    |      |── static
-|    |      |    |── img
 |    |      |    
+|    |      |── img
+|    |      |       
 |    |      |── js  
 |
 |    |── model 
