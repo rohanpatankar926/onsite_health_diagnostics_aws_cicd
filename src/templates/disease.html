@@ -29,8 +29,9 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="{{url_for('index')}}"><img src="{{url_for('static', filename='img/logo.png')}}"
-                                    class="img-responsive" style="width:400px;height: 50px; margin-top: -18px;"></a>
+                            <a class="navbar-brand" href="{{url_for('index')}}"><img
+                                    src="{{url_for('static', filename='img/logo.png')}}" class="img-responsive"
+                                    style="width:400px;height: 50px; margin-top: -18px;"></a>
                         </div>
                         <div class="collapse navbar-collapse navbar-right" id="myNavbar">
                             <ul class="nav navbar-nav">
@@ -85,24 +86,41 @@
                             <div class="more-features-box-text-icon"> <i class="fa fa-angle-right"
                                     aria-hidden="true"></i> </div>
                             <div class="more-features-box-text-description">
-                                <h3>Heart Disease</h3>
+                                <a href="{{url_for('heart')}}">
+                                    <h3 style="color: rgb(29, 3, 51);">Heart Failure</h3>
+                                </a>
                                 <p>Together CVD resulted in
                                     17.9 million deaths (32.1%) in 2015, up from 12.3 million (25.8%) in 1990.
+                                    The term “heart disease” refers to several types of heart conditions. In the United
+                                    States, the most common type of heart disease is coronary artery disease (CAD),
+                                    which can lead to heart attack.
                                 </p>
                                 <a href="{{url_for('heart')}}" style="color: #0cb8b6; padding-top:10px;">Predict with
                                     user input</a>
+                                <img src="{{url_for('static', filename='img/heartdisease.png')}}" class="img-responsive"
+                                    style=" width:170px;height: 210px;margin-top: 28px;">
+                               
                             </div>
                         </div>
                         <div class="more-features-box-text">
                             <div class="more-features-box-text-icon"> <i class="fa fa-angle-right"
                                     aria-hidden="true"></i> </div>
                             <div class="more-features-box-text-description">
-                                <h3>Breast Cancer</h3>
-                                <p>Breast cancer is better to be used by
-                                    health professionals who want to save time and have some experience in the
-                                    related area.</p>
-                                <a href="{{url_for('breastcancer')}}" style="color: #0cb8b6; padding-top:10px;">Predict
-                                    with user input</a>
+                                <a href="{{url_for('breastcancer')}}">
+                                    <h3 style="color: rgb(29, 3, 51);">Breast Cancer</h3>
+                                </a>
+                                <p>Breast cancer can occur in women and rarely in men.
+                                    Symptoms of breast cancer include a lump in the breast, bloody discharge from the
+                                    nipple and changes in the shape or texture of the nipple or breast.
+                                    Its treatment depends on the stage of cancer. It may consist of chemotherapy,
+                                    radiation, hormone therapy and surgery.</p>
+
+                                 <a href="{{url_for('breastcancer')}}" style="color: #0cb8b6; padding-top:20px;">Predict
+                                        with user input</a>
+                                <img src="{{url_for('static', filename='img/breastcancer.png')}}" class="img-responsive"
+                                    style=" width:180px;height: 180px;margin-top: 28px;">
+
+                                
 
                             </div>
                         </div>
@@ -110,12 +128,21 @@
                             <div class="more-features-box-text-icon"> <i class="fa fa-angle-right"
                                     aria-hidden="true"></i> </div>
                             <div class="more-features-box-text-description">
-                                <h3>Diabetes</h3>
-                                <p>Diabetes mellitus, commonly known as just diabetes, is a group of metabolic disorders
-                                    characterized by a high blood sugar level over a prolonged period of time.
+                                <a href="{{url_for('diabetes')}}">
+                                    <h3 style="color: rgb(29, 3, 51);">Diabetes</h3>
+                                </a>
+                                <p>Diabetes is a disease that occurs when your blood glucose, also called blood sugar,
+                                    is too high. Blood glucose is your main source of energy and comes from the food you
+                                    eat. Insulin, a hormone made by the pancreas, helps glucose from food get into your
+                                    cells to be used for energy.
+
                                 </p>
                                 <a href="{{url_for('diabetes')}}" style="color: #0cb8b6; padding-top:10px;">Predict with
                                     user input</a>
+                                <img src="{{url_for('static', filename='img/diabetes.png')}}" class="img-responsive"
+                                    style=" width:180px;height: 210px;margin-top: 28px;">
+
+                               
                             </div>
 
                         </div>
@@ -123,55 +150,92 @@
                             <div class="more-features-box-text-icon"> <i class="fa fa-angle-right"
                                     aria-hidden="true"></i> </div>
                             <div class="more-features-box-text-description">
-                                <h3>Thyroid Detection</h3>
-                                <p>The thyroid, or thyroid gland, is an endocrine gland in vertebrates.It is located at
-                                    the front of the neck, below the Adam's apple. </p>
+                                <a href="{{url_for('thyroid')}}">
+                                    <h3 style="color: rgb(29, 3, 51);">Thyroid Disease</h3>
+                                </a>
+                                <p>The two main types of thyroid disease are hypothyroidism and hyperthyroidism. Both
+                                    conditions can be caused by other diseases that impact the way the thyroid gland
+                                    works. Conditions that can cause hypothyroidism include: Thyroiditis: This condition
+                                    is an inflammation (swelling) of the thyroid gland.</p>
                                 <a href="{{url_for('thyroid')}}" style="color: #0cb8b6; padding-top:10px;">Predict with
                                     user input</a>
+
+                                <img src="{{url_for('static', filename='img/thyroid.png')}}" class="img-responsive"
+                                    style=" width:220px;height: 270px;margin-top: 28px;">
+                               
                             </div>
                         </div>
                         <div class="more-features-box-text">
                             <div class="more-features-box-text-icon"> <i class="fa fa-angle-right"
                                     aria-hidden="true"></i> </div>
                             <div class="more-features-box-text-description">
-                                <h3>Pneumonia Detection</h3>
-                                <p>Pneumonia is an inflammatory condition of the lung primarily affecting the small air
-                                    sacs known as alveoli.
+                                <a href="{{url_for('pneumonia')}}">
+                                    <h3 style="color: rgb(29, 3, 51);">Pneumonia</h3>
+                                </a>
+                                <p>Pneumonia is an infection that inflames the air sacs in one or both lungs. The air
+                                    sacs may fill with fluid or pus (purulent material), causing cough with phlegm or
+                                    pus, fever, chills, and difficulty breathing. A variety of organisms, including
+                                    bacteria, viruses and fungi, can cause pneumonia.
                                 </p>
-                                <a href="{{url_for('pneumonia')}}" style="color: #0cb8b6; padding-top:10px;">Predict
-                                    with user input</a>
+                                <a href="{{url_for('pneumonia')}}"
+                                style="color: #0cb8b6; margin-top: 15px; padding-top:10px;">Predict
+                                with user input</a>
+
+                                <img src="{{url_for('static', filename='img/pneumonia.png')}}" class="img-responsive"
+                                    style=" width:240px;height: 270px;margin-top: 28px;">
+
+                               
                             </div>
                         </div>
                         <div class="more-features-box-text">
                             <div class="more-features-box-text-icon"> <i class="fa fa-angle-right"
                                     aria-hidden="true"></i> </div>
                             <div class="more-features-box-text-description">
-                                <h3>Brain-tumor Detection</h3>
-                                <p> A brain tumor occurs when abnormal cells form within the brain There are two main
-                                    types of tumors:
-                                    malignant tumors and benign (non-cancerous) tumors
+                                <a href="#">
+                                    <h3 style="color: rgb(29, 3, 51);">Brain Tumor</h3>
+                                </a>
+                                <p> A cancerous or non-cancerous mass or growth of abnormal cells in the brain.
+                                    Tumours can start in the brain, or cancer elsewhere in the body can spread to the
+                                    brain.
+                                    Symptoms include new or increasingly strong headaches, blurred vision, loss of
+                                    balance, confusion and seizures.
                                 </p>
+
                                 <a href="#" style="color: #0cb8b6; padding-top:10px;">Predict with user input</a>
+                                <img src="{{url_for('static', filename='img/brain_tumor.png')}}" class="img-responsive"
+                                    style=" width:270px;height: 250px;margin-top: 28px;">
+
+                               
                             </div>
                         </div>
                         <div class="more-features-box-text">
                             <div class="more-features-box-text-icon"> <i class="fa fa-angle-right"
                                     aria-hidden="true"></i> </div>
                             <div class="more-features-box-text-description">
-                                <h3>Malaria Detection</h3>
-                                <p>Malaria is a mosquito-borne infectious disease that affects humans and other animals
+                                <a href="#">
+                                    <h3 style="color: rgb(29, 3, 51);">Malaria</h3>
+                                </a>
+                                <p>Malaria is a disease caused by a parasite. The parasite is spread to humans through
+                                    the bites of infected mosquitoes. People who have malaria usually feel very sick
+                                    with a high fever and shaking chills. While the disease is uncommon in temperate
+                                    climates, malaria is still common in tropical and subtropical countries.
                                 </p>
+
                                 <a href="" style="color: #0cb8b6; padding-top:10px;">Predict with user input</a>
+                                <img src="{{url_for('static', filename='img/malaria.png')}}" class="img-responsive"
+                                    style=" width:170px;height: 210px;margin-top: 28px;">
+                               
                             </div>
                         </div>
 
                         <div class="more-features-box-text">
 
                             <div class="more-features-box-text-description">
-
-                                <p>As this project is done for educational purposes, user need to check it by their own
-                                    risk as the model is not 100% accurate and it has some false negatives.
-
+                                <h3 style="color: rgb(122, 9, 9);">ALERT !!</h3>
+                                <p style="color: rgb(122, 9, 9);">
+                                    Please, do not use this predictive model without the observation of medical expert.
+                                    <br>
+                                    <br>Feel free to try it for educational purpose.
                                 </p>
 
                             </div>
