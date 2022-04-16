@@ -25,7 +25,41 @@ def disease():
 
 @app.route('/breastcancer',methods=['GET','POST'])
 def breastcancer():
-    return render_template('breastcancer.html')
+    if request.method == "POST":
+        try:
+            Radius_Mean = float(request.form["radius_mean"])
+            Area_Mean = float(request.form["area_mean"])
+            Compactness_Mean = float(request.form["compactness_mean"])
+            Concavity_Mean = float(request.form["concavity_mean"])
+            Concave_Points_Mean = float(request.form["concave_points_mean"])
+            Area_Worst = float(request.form["area_worst"])
+            Compactness_Worst = float(request.form["compactness_worst"])
+            Concavity_Worst = float(request.form["concavity_worst"])
+            Area_Se = float(request.form["area_se"])
+            Fractal_Dimension_Se = float(request.form["fractal_dimension_se"])
+            Symmetry_Worst = float(request.form["symmetry_worst"])
+            Fractal_Dimension_Worst = float(request.form["fractal_dimension_worst"])
+
+            breast_file = "breast_model.sav"
+            loaded_breast_model = joblib.load(breast_file)
+
+            breast_pred = loaded_breast_model.predict([[Radius_Mean, Area_Mean, Compactness_Mean, Concavity_Mean,
+            Concave_Points_Mean, Area_Worst, Compactness_Worst,Concavity_Worst, 
+            Area_Se, Fractal_Dimension_Se, Symmetry_Worst, Fractal_Dimension_Worst]])
+            breast_pred = round(100*breast_pred[0])
+            print(breast_pred)
+            if(breast_pred == 0):
+                res = "Congratulations! you are safe from Breast Cancer"
+            else:
+                res = "Sorry :( you have encountered with Breast Cancer"
+            return render_template('breastcancer.html',prediction=res)
+           
+
+        except Exception as e:
+            print(e)
+            return "Something went wrong !!"
+    else:
+        return render_template('breastcancer.html')
 
 @app.route('/diabetes',methods=['GET','POST'])
 def diabetes():

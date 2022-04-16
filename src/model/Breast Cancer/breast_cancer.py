@@ -59,3 +59,4 @@ loaded_model = joblib.load(filename)
 X_test = scaler.fit_transform(X_test)
 pred = loaded_model.predict(X_test)
 
+
