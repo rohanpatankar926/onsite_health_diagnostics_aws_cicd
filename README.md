@@ -67,7 +67,7 @@ We are developing this project which involves the prediction of many diseases ba
 ## Clone
 
 ```
-git clone git@github.com:Nix-code/Disease-Prediction-and-Deployment.git
+git clone git@github.com:Nix-code/Onsite-Health-Diagnostic-OHD.git
 ```
 - To run on your local machine, make sure you have installed every requirements.
 ```
@@ -84,4 +84,5 @@ Apsara Budhathoki - ```Web Design & Development```
 Nishant Banjade - ```Machine Learning & Deployment```
 
 ## Licence
+
 ```MIT```
