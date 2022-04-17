@@ -1,9 +1,9 @@
 # Onsite Health Diagnostic (OHD)
 
 <img src="https://github.com/Nix-code/Onsite-Health-Diagnostic-OHD/blob/main/src/static/img/disease2page.png" width="1100" height="500" />
-## Latest release
 
-- Demo    :  [Webapp](https://onsitehealth.herokuapp.com/)
+
+- Website link    :  [click here](https://onsitehealth.herokuapp.com/)
 
 Developing a disease predicting web application using the concept of Machine Learning and Deep Learning to make the predictive model for various diseases such as ```Breast Cancer```,```Malaria```, ```Pneumonia```, ```Diabetes```, ```Brain tumour```, ```plant disease``` etc.
 ## Table Of Contents
