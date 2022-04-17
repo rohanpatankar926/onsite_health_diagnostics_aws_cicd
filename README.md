@@ -1,6 +1,6 @@
 # Onsite Health Diagnostic (OHD)
 
-<img src="https://github.com/Nix-code/Onsite-Health-Diagnostic-OHD/blob/main/src/static/img/disease2page.png" width="1100" height="500" />
+<img src="https://github.com/Nix-code/Onsite-Health-Diagnostic-OHD/blob/main/docs/src/disease.png" width="1100" height="500" />
 
 
 <p> Official Documentation of the project</p>
