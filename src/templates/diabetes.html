@@ -12,12 +12,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='/css/font-awesome.min.css')}}">
   <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='/css/bootstrap.min.css')}}">
-
   <link rel="stylesheet" href="{{url_for('static', filename='/css/style.css')}}">
-
 </head>
 
 <body>
+  <!-- Top section -->
   <section id="top-section" class="top-section">
     <div class="bg-colo">
       <nav class="navbar navbar-default navbar-fixed-top">
@@ -37,33 +36,27 @@
               <ul class="nav navbar-nav">
                 <li class="active"><a href="{{url_for('index')}}">Home</a></li>
                 <li class=""><a href="{{url_for('disease')}}">Disease</a></li>
-
-                <li class=""><a href="#about">About</a></li>
-
+                <li class=""><a href="{{url_for('heart')}}">Heart</a></li>
+                <li class=""><a href="{{url_for('breastcancer')}}">Breast</a></li>
+                
+                <li class=""><a href="#">Pneumonia</a></li>
               </ul>
             </div>
-
           </div>
-
         </div>
       </nav>
+
+      <!-- User input and background section -->
       <div class="container">
         <div class="row">
           <div class="top-section-info">
-
             <div class="top-section-text text-center" style="margin-top:-70px" ;>
-
-
-              <form class="well form-horizontal" action="/diabetes" method="POST" id="contact_form" padding="500%" margin="50%">
+              <form class="well form-horizontal" action="/diabetes" method="POST" id="contact_form" padding="500%"
+                margin="50%">
                 <fieldset>
-
-                  <!-- Form Name -->
-                  <!-- <legend>Enter values!</legend> -->
-
-                  <!-- Text input-->
-                  <b><p style="color:rgb(65, 26, 8);  font-size: 22px; margin-bottom: 23px;">DIABETES DIAGNOSIS</p></b>
-                 
-
+                  <b>
+                    <p style="color:rgb(126, 5, 31);  font-size: 22px; margin-bottom: 23px;">Diabetes Diagnostic</p>
+                  </b>
                   <div class="form-group">
                     <label class="col-md-4 control-label"></label>
                     <div class="col-md-4 inputGroupContainer">
@@ -75,7 +68,6 @@
                   </div>
 
                   <!-- Text input-->
-
                   <div class="form-group">
                     <label class="col-md-4 control-label"></label>
                     <div class="col-md-4 inputGroupContainer">
@@ -86,7 +78,6 @@
                     </div>
                   </div>
 
-                  <!-- Text input-->
                   <div class="form-group">
                     <label class="col-md-4 control-label"></label>
                     <div class="col-md-4 inputGroupContainer">
@@ -96,9 +87,6 @@
                       </div>
                     </div>
                   </div>
-
-
-                  <!-- Text input-->
 
                   <div class="form-group">
                     <label class="col-md-4 control-label"></label>
@@ -110,8 +98,6 @@
                     </div>
                   </div>
 
-                  <!-- Text input-->
-
                   <div class="form-group">
                     <label class="col-md-4 control-label"></label>
                     <div class="col-md-4 inputGroupContainer">
@@ -121,8 +107,6 @@
                       </div>
                     </div>
                   </div>
-
-                  <!-- Text input-->
 
                   <div class="form-group">
                     <label class="col-md-4 control-label"></label>
@@ -134,14 +118,8 @@
                     </div>
                   </div>
 
-
-
-
-                  <!-- Text input-->
-
                   <div class="form-group">
                     <label class="col-md-4 control-label"></label>
-
                     <div class="col-md-4 inputGroupContainer">
                       <div class="input-group">
                         <span class="input-group-addon"></span>
@@ -151,7 +129,6 @@
                     </div>
                   </div>
 
-                  <!-- Text input-->
                   <div class="form-group">
                     <label class="col-md-4 control-label"></label>
                     <div class="col-md-4 inputGroupContainer">
@@ -168,26 +145,19 @@
                       <button type="submit" class="btn btn-warning">Predict<span
                           class="glyphicon glyphicon-send"></span></button>
                     </div>
-
+                    <!-- Prediction Result section -->
                     <div class="res">
-
                       <h3 style="color: rgb(12, 10, 39);">{{prediction}}</h3>
                     </div>
                   </div>
-
                 </fieldset>
               </form>
             </div>
-          </div><!-- /.container -->
+          </div>
         </div>
       </div>
     </div>
-    </div>
-    </div>
-
-
   </section>
-
   <!--about-->
   <section id="about" class="section-padding">
     <div class="container">
@@ -202,6 +172,7 @@
             </p>
           </div>
         </div>
+
         <div class="col-md-9 col-sm-8 col-xs-12">
           <div style="visibility: visible;" class="col-sm-9 more-features-box">
             <div class="more-features-box-text">
@@ -209,15 +180,13 @@
               <div class="more-features-box-text-description">
                 <h3>Symptoms</h3>
                 <ul>
-
                   <li>1. Increase thirst</li>
                   <li>2. Increase hunger</li>
                   <li>3. Frequent urination</li>
                 </ul>
-
-
               </div>
             </div>
+
             <div class="more-features-box-text">
               <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
               <div class="more-features-box-text-description">
@@ -230,8 +199,6 @@
                   <li>5. Maintain your blood sugar level</li>
                   <li>6. Keeps your body physically active</li>
                 </ul>
-
-
               </div>
             </div>
             <div class="more-features-box-text">
@@ -242,9 +209,7 @@
                   <li>1. Healthy diet</li>
                   <li>2. Physical exercise</li>
                 </ul>
-
               </div>
-
             </div>
 
           </div>
@@ -252,8 +217,7 @@
       </div>
     </div>
   </section>
-
-
+  <!-- Javascript section -->
   <script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
   <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
   <script src="{{url_for('static',filename='js/custom.js')}}"></script>

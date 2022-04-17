@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,10 +35,11 @@
                         <div class="collapse navbar-collapse navbar-right" id="myNavbar">
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="{{url_for('index')}}">Home</a></li>
-
-                                <li class=""><a href="#about">About</a></li>
-                                <li class=""><a href="#prediction-section">Prediction</a></li>
-
+                                <li class=""><a href="{{url_for('heart')}}">Heart</a></li>
+                                <li class=""><a href="{{url_for('breastcancer')}}">Breast</a></li>
+                                <li class=""><a href="{{url_for('diabetes')}}">Diabetes</a></li>
+                                <li class=""><a href="#">Brain</a></li>
+                               
                             </ul>
                         </div>
                     </div>
@@ -51,20 +51,15 @@
                         <div class="top-section-logo text-center">
                             <img src="{{url_for('static',filename='img/disease2page.png')}}" alt="logo"
                                 style="width:700px;height: 500px; margin-top: -30px;" class="img-responsive">
-
                         </div>
-
                         <div class="overlay-detail text-center">
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
         </div>
     </section>
-
 
     <!--about-->
     <section id="about" class="section-padding">

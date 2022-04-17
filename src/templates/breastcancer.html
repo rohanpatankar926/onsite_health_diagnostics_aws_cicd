@@ -12,9 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='/css/font-awesome.min.css')}}">
   <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='/css/bootstrap.min.css')}}">
-
   <link rel="stylesheet" href="{{url_for('static', filename='/css/style.css')}}">
-
 </head>
 
 <body>
@@ -36,46 +34,31 @@
             <div class="collapse navbar-collapse navbar-right" id="myNavbar">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="{{url_for('index')}}">Home</a></li>
-                <li class=""><a href="{{url_for('disease')}}">Disease</a></li>
-                <li class=""><a href="#about">About</a></li>
-
+                    <li class=""><a href="{{url_for('disease')}}">Disease</a></li>
+                    <li class=""><a href="{{url_for('heart')}}">Heart</a></li>
+                    <li class=""><a href="{{url_for('diabetes')}}">Diabetes</a></li>
+                    <li class=""><a href="#">Pneumonia</a></li>
               </ul>
             </div>
           </div>
         </div>
       </nav>
 
-
-
       <div class="container">
         <div class="row">
           <div class="top-section-info">
-
             <div class="top-section-text text-center" style="margin-top:-70px" ;>
-
-
               <form class="well form-horizontal" action="/breastcancer" method="POST" id="contact_form">
                 <fieldset>
-
-                  <!-- Form Name -->
-                  <!-- <legend>Enter values!</legend> -->
-
-
-                  <!-- Text input-->
-
                   <div class="form-group">
-
                     <label class="col-md-4 control-label"></label>
                     <div class="col-md-4 inputGroupContainer">
                       <b>
-                        <p style="color:rgb(65, 26, 8); font-size: 22px; margin-bottom: 23px;">BREAST CANCER DIAGNOSIS
+                        <p style="color:rgb(126, 5, 31); font-size: 22px; margin-bottom: 23px;">Breast Cancer Diagnostic
                         </p>
                       </b>
-
-
                     </div>
                   </div>
-
                   <!-- Text input-->
                   <div class="form-group">
                     <label class="col-md-4 control-label"></label>
@@ -123,7 +106,6 @@
                     </div>
                   </div>
 
-
                   <div class="form-group">
                     <label class="col-md-4 control-label"></label>
                     <div class="col-md-4 inputGroupContainer">
@@ -131,11 +113,9 @@
                         <span class="input-group-addon"></span>
                         <input name="concave_points_mean" placeholder="Concave Points Mean" class="form-control"
                           type="text">
-
                       </div>
                     </div>
                   </div>
-
 
                   <div class="form-group">
                     <label class="col-md-4 control-label"></label>
@@ -158,21 +138,16 @@
                     </div>
                   </div>
 
-
-
                   <!-- Text area -->
-
                   <div class="form-group">
                     <label class="col-md-4 control-label"></label>
                     <div class="col-md-4 inputGroupContainer">
                       <div class="input-group">
                         <span class="input-group-addon"></span>
                         <input name="concavity_worst" placeholder="Concavity Worst" class="form-control" type="text">
-
                       </div>
                     </div>
                   </div>
-
 
                   <div class="form-group">
                     <label class="col-md-4 control-label"></label>
@@ -180,11 +155,9 @@
                       <div class="input-group">
                         <span class="input-group-addon"></span>
                         <input name="area_se" placeholder="Area Se" class="form-control" type="text">
-
                       </div>
                     </div>
                   </div>
-
 
                   <div class="form-group">
                     <label class="col-md-4 control-label"></label>
@@ -193,13 +166,9 @@
                         <span class="input-group-addon"></span>
                         <input name="fractal_dimension_se" placeholder="Fractal Dimension Se" class="form-control"
                           type="text">
-
                       </div>
                     </div>
                   </div>
-
-
-
 
                   <div class="form-group">
                     <label class="col-md-4 control-label"></label>
@@ -207,12 +176,9 @@
                       <div class="input-group">
                         <span class="input-group-addon"></span>
                         <input name="symmetry_worst" placeholder="Symmetry Worst" class="form-control" type="text">
-
                       </div>
                     </div>
                   </div>
-
-
 
                   <div class="form-group">
                     <label class="col-md-4 control-label"></label>
@@ -221,11 +187,9 @@
                         <span class="input-group-addon"></span>
                         <input name="fractal_dimension_worst" placeholder="Fractal Dimension Worst" class="form-control"
                           type="text">
-
                       </div>
                     </div>
                   </div>
-
 
                   <!-- Button -->
                   <div class="form-group">
@@ -236,12 +200,9 @@
                     </div>
                   </div>
 
-
                   <div class="res">
-
                     <h3 style="color: rgb(12, 10, 39);">{{prediction}}</h3>
                   </div>
-
                 </fieldset>
               </form>
             </div>
@@ -249,7 +210,6 @@
         </div>
       </div>
     </div>
-
 
   </section>
 
@@ -266,9 +226,9 @@
               the shape or texture of the nipple or breast.
               Its treatment depends on the stage of cancer. It may consist of chemotherapy, radiation, hormone therapy
               and surgery.</p>
-
           </div>
         </div>
+
         <div class="col-md-9 col-sm-8 col-xs-12">
           <div style="visibility: visible;" class="col-sm-9 more-features-box">
             <div class="more-features-box-text">
@@ -282,11 +242,7 @@
                   <li>4. Change the breast size</li>
                   <li>5. Fluid comig from the nipple</li>
                   <li>6. Red scaly patch of skin on the breast</li>
-
-
                 </ul>
-
-
               </div>
             </div>
             <div class="more-features-box-text">
@@ -300,10 +256,9 @@
                   <li>4. Maintain your blood sugar level</li>
                   <li>5. Keeps your body physically active</li>
                 </ul>
-
-
               </div>
             </div>
+
             <div class="more-features-box-text">
               <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
               <div class="more-features-box-text-description">
@@ -315,19 +270,12 @@
                   <li>4. Hormonal therapy</li>
                   <li>5. Radition therapy</li>
                 </ul>
-
-
               </div>
-
             </div>
-
-            <div> </div>
           </div>
         </div>
       </div>
   </section>
-
-
 
   <script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
   <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
