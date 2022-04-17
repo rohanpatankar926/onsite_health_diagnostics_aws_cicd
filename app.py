@@ -89,17 +89,84 @@ def diabetes():
     else:
         return render_template('diabetes.html')
 
+@app.route('/heart',methods=['GET','POST'])
+def heart():
+    if request.method == 'POST':
+        try:
+            Age = float(request.form["age"])
+            sex = (request.form["sex"])
+            if(sex == "male"):
+                sex = 1
+            else:
+                sex = 0
+            #chest pain
+            chestpain = (request.form["chestpain"])
+            if(chestpain == "ATA"):
+                chestpain = 1
+            elif (chestpain == "NAP"):
+                chestpain = 2
+            elif (chestpain == "ASY"):
+                chestpain = 0
+            else:
+                chestpain = 3
+            # resting bp
+            restingbp = float(request.form["restingbp"])
+            cholestrol = float(request.form["cholestrol"])
+            fastingbs = float(request.form["fastingbs"])
+            restingecg = (request.form["restingecg"])
+            if(restingecg == "Normal"):
+                restingecg = 1
+            elif (restingecg == "ST"):
+                restingecg = 2
+            else:
+                restingecg = 0
+
+            maxhr = float(request.form["maxhr"])
+            exercise = (request.form["exercise"])
+            if(exercise == "N"):
+                exercise = 0
+            else:
+                exercise = 1
+
+            oldpeak = float(request.form["oldpeak"])
+            stslope = (request.form["stslope"])
+            if(stslope == "up"):
+                stslope = 2
+            elif(stslope == "flat"):
+                stslope = 1
+            else:
+                stslope = 0
+            
+            file_heart = "heart_model.sav"
+            loaded_model = joblib.load(file_heart)
+            heart_pred = loaded_model.predict([[Age, sex, chestpain, restingbp, cholestrol, fastingbs, restingecg, maxhr,
+            exercise, oldpeak, stslope]])
+
+            heart_pred = round(100*heart_pred[0])
+            if(heart_pred == 0):
+                res = "Congratulations! you are safe from Heart Disease"
+            else:
+                res = "Sorry :( you have encountered with Heart Failure"
+            return render_template('heart.html',predict = res)
+
+        except Exception as e:
+            print(e)
+            return "Something went wrong! Please check your values once and try again"
+    else:
+
+        return render_template('heart.html')
+
 @app.route('/pneumonia',methods=['GET','POST'])
 def pneumonia():
     return render_template('pneumonia.html')
 
 @app.route('/thyroid',methods=['GET','POST'])
+
+
 def thyroid():
     return render_template('thyroid.html')
 
-@app.route('/heart',methods=['GET','POST'])
-def heart():
-    return render_template('heart.html')
+
 
 if __name__=="__main__":
     app.run(port=5000,debug=True)
