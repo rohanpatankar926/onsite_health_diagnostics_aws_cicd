@@ -86,7 +86,10 @@ top-section
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
     color: #EA6045;
 }
-
+.btn-img{
+    color: black;
+    
+}
 @media (max-width: 768px) {
 	.navbar-collapse {
 		background: rgba(28,74,90, 0.9);
