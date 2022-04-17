@@ -3,7 +3,9 @@
 <img src="https://github.com/Nix-code/Onsite-Health-Diagnostic-OHD/blob/main/src/static/img/disease2page.png" width="1100" height="500" />
 
 
-- Website link    :  [click here](https://onsitehealth.herokuapp.com/)
+<p> Official Documentation of the project</p>
+
+-  [Documentation](https://nix-code.github.io/Onsite-Health-Diagnostic-OHD/)
 
 Developing a disease predicting web application using the concept of Machine Learning and Deep Learning to make the predictive model for various diseases such as ```Breast Cancer```,```Malaria```, ```Pneumonia```, ```Diabetes```, ```Brain tumour```, ```plant disease``` etc.
 ## Table Of Contents
@@ -65,7 +67,7 @@ We are developing this project which involves the prediction of many diseases ba
 ## Clone
 
 ```
-git clone git@github.com:Nix-code/Disease-Prediction-and-Deployment.git
+git clone git@github.com:Nix-code/Onsite-Health-Diagnostic-OHD.git
 ```
 - To run on your local machine, make sure you have installed every requirements.
 ```
@@ -82,4 +84,5 @@ Apsara Budhathoki - ```Web Design & Development```
 Nishant Banjade - ```Machine Learning & Deployment```
 
 ## Licence
+
 ```MIT```
