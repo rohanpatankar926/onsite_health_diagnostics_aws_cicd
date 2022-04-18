@@ -13,4 +13,3 @@ Werkzeug
 gevent
 pillow
 h5py
-tensorflow
