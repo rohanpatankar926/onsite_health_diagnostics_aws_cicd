@@ -6,6 +6,17 @@ import os
 import sys
 # load the model using joblib
 import joblib
+import numpy as np
+# Keras
+from keras.applications.imagenet_utils import preprocess_input, decode_predictions
+from keras.models import load_model
+from keras.preprocessing import image
+
+# Flask utils
+from flask import Flask, redirect, url_for, request, render_template
+from werkzeug.utils import secure_filename
+from gevent.pywsgi import WSGIServer
+
 webroot = 'src'
 static_dir = os.path.join(webroot,'static')
 template_dir = os.path.join(webroot,'templates')
@@ -156,13 +167,57 @@ def heart():
 
         return render_template('heart.html')
 
+#pneumonia prediction section
+
+
+
+# load pneumonia model path
+PNEUMONIA_MODEL_PATH = 'pneumonia_model.h5'
+
+#Load your trained model
+model = load_model(PNEUMONIA_MODEL_PATH)
+# pneumonia detection
+def pneumonia_predict(img_path, model):
+    img = image.load_img(img_path, target_size=(64, 64)) #target_size must agree with what the trained model expects!!
+
+    # Preprocessing the image
+    img = image.img_to_array(img)
+    img = np.expand_dims(img, axis=0)
+
+   
+    preds = model.predict(img)
+    return preds
+
+
+
 @app.route('/pneumonia',methods=['GET','POST'])
 def pneumonia():
+    if request.method == 'POST':
+        try:
+            # Get the file from post request
+            f = request.files['file']
+
+            # Save the file to ./uploads
+            basepath = os.path.dirname(__file__)
+            file_path = os.path.join(
+                basepath, 'uploads', secure_filename(f.filename))
+            f.save(file_path)
+
+            # Make prediction
+            preds = pneumonia_predict(file_path, model)
+            os.remove(file_path)#removes file from the server after prediction has been returned
+
+            if preds == 1:
+                res = "Sorry :( you have been diagnostic with Pneumonia"
+            else:
+                res = "Congratulations! you are safe from Pneumonia"
+            return render_template('pneumonia.html',prediction=res)
+        except Exception as e:
+            print(e)
+            return "Something went wrong! Have you uploaded the image?"
     return render_template('pneumonia.html')
 
 @app.route('/thyroid',methods=['GET','POST'])
-
-
 def thyroid():
     return render_template('thyroid.html')
 
