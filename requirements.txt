@@ -13,3 +13,4 @@ Werkzeug
 gevent
 pillow
 h5py
+tensorflow==2.5.0rc0
