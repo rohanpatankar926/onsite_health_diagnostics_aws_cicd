@@ -12,5 +12,5 @@ gunicorn
 Werkzeug>=0.15.3
 gevent==1.2.2
 pillow>=6.2.0
-h5py==2.7.0
-tensorflow>=1.12.1
+h5py
+tensorflow==2.1
