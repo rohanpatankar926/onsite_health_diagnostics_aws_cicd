@@ -30,10 +30,10 @@ Developing a disease predicting web application using the concept of Machine Lea
  - Malaria-Detection    :              - [Dataset](https://lhncbc.nlm.nih.gov/LHC-publications/pubs/MalariaDatasets.html#:~:text=Abstract%3A,the%20Malaria%20Screener%20research%20activity.&text=The%20dataset%20contains%20a%20total,of%20parasitized%20and%20uninfected%20cells.)
 
 
-## Directory
+## Directory basic overview
 ```
 ├── docs
-|    |──about.txt
+|    
 ├── src
 |    |── static
 |    |      |── css
@@ -41,20 +41,18 @@ Developing a disease predicting web application using the concept of Machine Lea
 |    |      |── img
 |    |      |       
 |    |      |── js  
-|
+|    |
 |    |── model 
 |    |      |── Breast Cancer
 |    |      |── Diabetes
 |    |      |── Heart Disease
-|    |      |── Pneumonia-detection
-|    |      |── brain_tumor_classification
-|    |      |── Malaria-Detection
-|    |      |── thyroid prediction
+|    |      |── Pneumonia
+|    |      |── Brain Tumor
+|    |      |── Malaria Detection
+|    |      |── Thyroid prediction
 |    |
-|    |── templates
-│         ├── index.html
-│         |── heart.html
-|         |── disease.html
+|    |── Templates
+│        
 |
 ├── app.py
 ├── README.md
