@@ -10,4 +10,4 @@ pillow
 h5py
 tensorflow-cpu
 gunicorn
-keras==2.4.0
+keras
