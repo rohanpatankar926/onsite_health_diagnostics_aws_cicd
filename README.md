@@ -12,7 +12,6 @@ Developing a disease predicting web application using the concept of Machine Lea
 
 -   [Tools](#Tools)
 -   [Datasets](#Datasets)
--   [Directory](#Directory)
 -   [Impact](#Impact)
 -   [Clone](#Clone)
 -   [Developers](#Developers)
@@ -29,35 +28,6 @@ Developing a disease predicting web application using the concept of Machine Lea
  - Breast Cancer        :              [Dataset](https://github.com/Nix-code/Disease-Prediction-and-Deployment/blob/main/src/model/Breast%20Cancer/data.csv)
  - Malaria-Detection    :              - [Dataset](https://lhncbc.nlm.nih.gov/LHC-publications/pubs/MalariaDatasets.html#:~:text=Abstract%3A,the%20Malaria%20Screener%20research%20activity.&text=The%20dataset%20contains%20a%20total,of%20parasitized%20and%20uninfected%20cells.)
 
-
-## Directory basic overview
-```
-├── docs
-|    
-├── src
-|    |── static
-|    |      |── css
-|    |      |    
-|    |      |── img
-|    |      |       
-|    |      |── js  
-|    |
-|    |── model 
-|    |      |── Breast Cancer
-|    |      |── Diabetes
-|    |      |── Heart Disease
-|    |      |── Pneumonia
-|    |      |── Brain Tumor
-|    |      |── Malaria Detection
-|    |      |── Thyroid prediction
-|    |
-|    |── Templates
-│        
-|
-├── app.py
-├── README.md
-└── requirements.txt
-```
 ## Impact
 <p> Impact in the real world</p>
 
@@ -73,6 +43,7 @@ $ export FLASK_APP=app
 $ flask run
  * Running on http://127.0.0.1:5000/
  ```
+ 
  
 ## Developers
 Rohan Patankar - ```Machine Learning & Deployment```
