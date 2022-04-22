@@ -208,7 +208,7 @@ def pneumonia():
             os.remove(file_path)#removes file from the server after prediction has been returned
 
             if preds == 1:
-                res = "Sorry :( you have been diagnostic with Pneumonia"
+                res = "Sorry :( you have got the chances of Pneumonia"
             else:
                 res = "Congratulations! you are safe from Pneumonia"
             return render_template('pneumonia.html',prediction=res)
