@@ -43,11 +43,11 @@ $ flask run
 ```
  
 ## Developers
-Rohan Patankar - ```Machine Learning & Deployment```
+[Rohan Patankar](https://github.com/rohanpatankar926) - ```Machine Learning & Deployment```
 
-Apsara Budhathoki - ```Web Design & Development```
+[Apsara Budhathoki](https://github.com/ApsaraBudhathoki) - ```Web Design & Development```
 
-Nishant Banjade - ```Machine Learning & Deployment```
+[Nishant Banjade](https://github.com/Nix-code) - ```Machine Learning & Deployment```
 
 ## Licence
 
