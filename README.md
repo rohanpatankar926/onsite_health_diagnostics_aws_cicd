@@ -14,6 +14,7 @@
 -   [Clone](#Clone)
 -   [Developers](#Developers)
 -   [Licence](#Licence)
+-   [Note](#Note)
 
 
 
@@ -36,7 +37,10 @@ $ export FLASK_APP=app
 $ flask run
  * Running on http://127.0.0.1:5000/
  ```
- 
+ - If you are in a Linux Distribution
+ ``` $ cd Onsite-Health-Diagnostic-OHD
+     $ python3 app.py
+```
  
 ## Developers
 Rohan Patankar - ```Machine Learning & Deployment```
@@ -47,4 +51,12 @@ Nishant Banjade - ```Machine Learning & Deployment```
 
 ## Licence
 
-```MIT```
+[MIT Licence](https://github.com/Nix-code/Onsite-Health-Diagnostic-OHD/blob/main/LICENSE)
+
+
+## Note
+Sorry to mention that this is our college project and we are not able to accept any PR except the team members.
+ If you want to contribute , please raise the issue mentioning the bugs. 
+
+As soon as the college project evaluation will be completed, we will accept all the PRs and give credit to every contributor.
+
