@@ -16,24 +16,23 @@ from keras.preprocessing import image
 from flask import Flask, redirect, url_for, request, render_template
 from werkzeug.utils import secure_filename
 from gevent.pywsgi import WSGIServer
-
+# root directory
 webroot = 'src'
 static_dir = os.path.join(webroot,'static')
 template_dir = os.path.join(webroot,'templates')
-
+# defining the flask app
 app = Flask(__name__,static_folder=static_dir,template_folder=template_dir)
-
+# route for home page
 @app.route('/',methods=['GET','POST'])
 def index():
     return render_template('index.html')
 
+# route for disease section
 @app.route('/disease',methods=['GET','POST'])
 def disease():
     return render_template('disease.html')
 
-
-
-
+# breast cancer section
 @app.route('/breastcancer',methods=['GET','POST'])
 def breastcancer():
     if request.method == "POST":
@@ -53,18 +52,15 @@ def breastcancer():
 
             breast_file = "breast_model.sav"
             loaded_breast_model = joblib.load(breast_file)
-
             breast_pred = loaded_breast_model.predict([[Radius_Mean, Area_Mean, Compactness_Mean, Concavity_Mean,
             Concave_Points_Mean, Area_Worst, Compactness_Worst,Concavity_Worst, 
             Area_Se, Fractal_Dimension_Se, Symmetry_Worst, Fractal_Dimension_Worst]])
             breast_pred = round(100*breast_pred[0])
-            print(breast_pred)
             if(breast_pred == 0):
                 res = "Congratulations! you are safe from Breast Cancer"
             else:
                 res = "Sorry :( you have encountered with Breast Cancer"
             return render_template('breastcancer.html',prediction=res)
-           
 
         except Exception as e:
             print(e)
@@ -72,6 +68,7 @@ def breastcancer():
     else:
         return render_template('breastcancer.html')
 
+# Diabetes section
 @app.route('/diabetes',methods=['GET','POST'])
 def diabetes():
     if request.method == "POST":
@@ -147,7 +144,6 @@ def heart():
                 stslope = 1
             else:
                 stslope = 0
-            
             file_heart = "heart_model.sav"
             loaded_model = joblib.load(file_heart)
             heart_pred = loaded_model.predict([[Age, sex, chestpain, restingbp, cholestrol, fastingbs, restingecg, maxhr,
@@ -164,12 +160,9 @@ def heart():
             print(e)
             return "Something went wrong! Please check your values once and try again"
     else:
-
         return render_template('heart.html')
 
 #pneumonia prediction section
-
-
 
 # load pneumonia model path
 PNEUMONIA_MODEL_PATH = 'pneumonia_model.h5'
@@ -179,16 +172,11 @@ model = load_model(PNEUMONIA_MODEL_PATH)
 # pneumonia detection
 def pneumonia_predict(img_path, model):
     img = image.load_img(img_path, target_size=(64, 64)) #target_size must agree with what the trained model expects!!
-
     # Preprocessing the image
     img = image.img_to_array(img)
     img = np.expand_dims(img, axis=0)
-
-   
     preds = model.predict(img)
     return preds
-
-
 
 @app.route('/pneumonia',methods=['GET','POST'])
 def pneumonia():
@@ -196,17 +184,14 @@ def pneumonia():
         try:
             # Get the file from post request
             f = request.files['file']
-
             # Save the file to ./uploads
             basepath = os.path.dirname(__file__)
             file_path = os.path.join(
                 basepath, '', secure_filename(f.filename))
             f.save(file_path)
-
             # Make prediction
             preds = pneumonia_predict(file_path, model)
             os.remove(file_path)#removes file from the server after prediction has been returned
-
             if preds == 1:
                 res = "Sorry :( you have got the chances of Pneumonia"
             else:
@@ -217,11 +202,10 @@ def pneumonia():
             return "Something went wrong! Have you uploaded the image?"
     return render_template('pneumonia.html')
 
+# thyroid static page
 @app.route('/thyroid',methods=['GET','POST'])
 def thyroid():
     return render_template('thyroid.html')
-
-
-
+# Driver code
 if __name__=="__main__":
     app.run(port=5000,debug=True)
