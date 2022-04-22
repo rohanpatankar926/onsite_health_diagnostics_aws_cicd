@@ -10,3 +10,4 @@ h5py
 tensorflow-cpu
 gunicorn
 keras
+pytest
