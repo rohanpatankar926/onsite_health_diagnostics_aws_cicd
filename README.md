@@ -36,7 +36,10 @@ $ export FLASK_APP=app
 $ flask run
  * Running on http://127.0.0.1:5000/
  ```
- 
+ - If you are in a Linux Distribution
+ ``` $ cd Onsite-Health-Diagnostic-OHD
+     $ python3 app.py
+```
  
 ## Developers
 Rohan Patankar - ```Machine Learning & Deployment```
