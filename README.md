@@ -50,10 +50,10 @@ Nishant Banjade - ```Machine Learning & Deployment```
 
 ## Licence
 
-```MIT```
+(MIT Licence)[https://github.com/Nix-code/Onsite-Health-Diagnostic-OHD/blob/main/LICENSE]
 
-<p>Note: Sorry, to mention that this is our college project and we are not able to accept any PR except the team members.</p>
-<p>If you want to contribute , please raise the issue mentioning the bugs. </p>
+<p>Note: Sorry, to mention that this is our college project and we are not able to accept any PR except the team members.
+ If you want to contribute , please raise the issue mentioning the bugs. </p>
 
 <p>As soon as the college project evaluation will be completed, we will accept all the PRs and give credit to everyone.</p>
 
