@@ -64,7 +64,9 @@ def breastcancer():
 
         except Exception as e:
             print(e)
-            return "Something went wrong !!"
+            error=("Please fill all the fields for prediction🤦🤦")
+            error={"error":error}
+            return render_template("404.html",error=error)
     else:
         return render_template('breastcancer.html')
 
@@ -93,7 +95,9 @@ def diabetes():
 
         except Exception as e:
             print(e)
-            return "Something went wrong !! Please check the entered values once"
+            error=("Please fill all the fields for diabetes prediction🤦🤦")
+            error={"error":error}
+            return render_template("404.html",error=error)
     else:
         return render_template('diabetes.html')
 
@@ -158,7 +162,9 @@ def heart():
 
         except Exception as e:
             print(e)
-            return "Something went wrong! Please check your values once and try again"
+            error=("Please fill all the fields for heart disease prediction🤦🤦")
+            error={"error":error}
+            return render_template("404.html",error=error)
     else:
         return render_template('heart.html')
 
@@ -199,7 +205,9 @@ def pneumonia():
             return render_template('pneumonia.html',prediction=res)
         except Exception as e:
             print(e)
-            return "Something went wrong! Have you uploaded the image?"
+            error=("Have you uploaded the image??🤔🤔")
+            error={"error":error}
+            return render_template("404.html",error=error)
     return render_template('pneumonia.html')
 
 # thyroid static page
@@ -209,4 +217,4 @@ def thyroid():
 # Driver code
 port = int(os.environ.get("PORT", 5000))
 if __name__=="__main__":
-    app.run(debug=True,host="0.0.0.0",port=port)
+    app.run(debug=True,port=port)
