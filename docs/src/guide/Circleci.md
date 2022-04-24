@@ -20,8 +20,8 @@ CMD ["main.py"]`
 #### create a file ".circleci\config.yml" with following content
 `version: 2.1
 orbs:
-  heroku: circleci/heroku@1.0.1
-jobs:
+  heroku: circleci/heroku@1.0.1                                                                  
+jobs:                                                  
   build-and-test:
     executor: heroku/default
     docker:
@@ -92,7 +92,7 @@ workflows:
           filters:
             branches:
               only:
-                - main`
+                - main `
                 
 #### Replicate the requirements.txt file to your local node 
 `pip freeze > requirements.txt`
@@ -128,9 +128,9 @@ HEROKU_APP_NAME
 HEROKU_EMAIL_ADDRESS
 DOCKER_IMAGE_NAME= <any random name starting with char ending with int64> eg:onsite1234`
 
-####to update the modification
+#### To update the modification
 `git add .
 git commit -m "proper message"
 git push`
 
-###THATS IT KUDOS SUCCESSFULLY MADE CI/CD PIPELINE USING CIRCLE-CI
+### THATS IT KUDOS SUCCESSFULLY MADE CI/CD PIPELINE USING CIRCLE-CI
