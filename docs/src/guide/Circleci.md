@@ -18,7 +18,8 @@ CMD ["main.py"]`
 `web:gunicorn main:app $PORT`
 
 #### create a file ".circleci\config.yml" with following content
-`version: 2.1
+```
+version: 2.1
 orbs:
   heroku: circleci/heroku@1.0.1                                                                  
 jobs:                                                  
@@ -92,18 +93,20 @@ workflows:
           filters:
             branches:
               only:
-                - main `
-                
+                - main
+  ```               
 #### Replicate the requirements.txt file to your local node 
 `pip freeze > requirements.txt`
 
 #### initialize git repo
-`git init
+```
+git init
 git add .
 git commit -m "first commit"
 git branch -M main
 git remote add origin <github_url>
-git push -u origin main`
+git push -u origin main
+```
 
 #### create a account at circle ci
 https://circleci.com/login/
@@ -121,16 +124,20 @@ https://hub.docker.com/login
 https://app.circleci.com/projects/github/Avnish327030/setup/
 
 #### Select project setting in CircleCI and below environment variable
-`DOCKERHUB_USER
+```
+DOCKERHUB_USER
 DOCKER_HUB_PASSWORD_USER
 HEROKU_API_KEY
 HEROKU_APP_NAME
 HEROKU_EMAIL_ADDRESS
-DOCKER_IMAGE_NAME= <any random name starting with char ending with int64> eg:onsite1234`
+DOCKER_IMAGE_NAME= <any random name starting with char ending with int64> eg:onsite1234
+```
 
 #### To update the modification
-`git add .
+```
+git add .
 git commit -m "proper message"
-git push`
+git push
+```
 
-### THATS IT KUDOS SUCCESSFULLY MADE CI/CD PIPELINE USING CIRCLE-CI
+### THATS IT KUDOS SUCCESSFULLY MADE AUTOMATED DEPLOYMENT USING CIRCLE-CI PIPELINE
