@@ -1,17 +1,18 @@
 ## Deployment of Onsite Health Diagnostic website
 
-After integrating and testing the application the final part left is deploying of the complete application to the cloud platform.<br>
-For deploying the complete application the tools we used here are `circle-ci`,`Docker` and `Heroku`.For automation of the project we have applied **Mlops** strategy in simple we have made complete **CI/CD** pipeline for hosting our application to the cloud platform.
+After integrating the backend and testing the application the final part left is deploying of the complete application to the cloud platform so that user can use our website anywhere in the world.<br>
+For deploying the complete application the tools we used here are `circle-ci` for CI/CD pipeline,`Docker` for Contenarization and `Heroku` for cloud deployment.For the automation of the project we have applied **Mlops** strategy i.e Machine learning operations for deploying our complete application in the automated way.
 <br>
-</br>
 Now we will explain how we made CI/CD pipeline using circle-ci
 <br>
 #### Create a file "Dockerfile" with below content
-`FROM python:3.7
+```
+FROM python:3.7
 COPY ./app
 WORKDIR /app
 ENTRYPOINT ["python"]
-CMD ["main.py"]`
+CMD ["main.py"]
+```
 
 #### Create a "Procfile" with following content
 
