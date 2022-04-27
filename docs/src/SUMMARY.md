@@ -4,7 +4,7 @@
 
 # user Guide
 - [Installation](guide/installation.md)
-- [Circleci automation](guide/Circle.md)
+- [Circleci automation](guide/Circleci.md)
 - [Usage](guide/usage.md)
 - [Demo](guide/demo.md)
 
