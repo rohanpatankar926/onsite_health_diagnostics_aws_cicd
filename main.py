@@ -8,9 +8,10 @@ import sys
 import joblib
 import numpy as np
 # Keras
+import keras
 from keras.applications.imagenet_utils import preprocess_input, decode_predictions
 from keras.models import load_model
-from keras.preprocessing import image
+from keras.utils import load_img, img_to_array
 
 # Flask utils
 from flask import Flask, redirect, url_for, request, render_template
@@ -177,9 +178,9 @@ PNEUMONIA_MODEL_PATH = 'pneumonia_model.h5'
 model = load_model(PNEUMONIA_MODEL_PATH)
 # pneumonia detection
 def pneumonia_predict(img_path, model):
-    img = image.load_img(img_path, target_size=(64, 64)) #target_size must agree with what the trained model expects!!
+    img = load_img(img_path, target_size=(64, 64)) #target_size must agree with what the trained model expects!!
     # Preprocessing the image
-    img = image.img_to_array(img)
+    img = img_to_array(img)
     img = np.expand_dims(img, axis=0)
     preds = model.predict(img)
     return preds
@@ -215,7 +216,7 @@ def pneumonia():
 def thyroid():
     return render_template('thyroid.html')
 # Driver code
-port = int(os.environ.get("PORT", 5000))
+port = int(os.environ.get("PORT", 8000))
 
 if __name__=="__main__":
     

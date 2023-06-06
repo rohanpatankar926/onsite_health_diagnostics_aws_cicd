@@ -7,7 +7,7 @@ gevent
 joblib
 pillow
 h5py
-tensorflow-cpu
+tensorflow
 gunicorn
 keras
 pytest
